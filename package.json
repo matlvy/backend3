@@ -1,5 +1,5 @@
 {
-  "name": "backend3.4",
+  "name": "backend3.0",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -9,9 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "winston": "^3.14.2",
-    "winston-mongodb": "^5.1.1"
-  }
+  "description": ""
 }
