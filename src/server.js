@@ -1,49 +1,19 @@
 import express from "express";
-import mongoose from "mongoose";
-import morgan from "morgan";
-import passport from "passport";
-import { initializePassport } from "./config/passport.config.js";
-import routes from "./routes/index.js";
-import { config } from "./config/config.js";
-import { errorHandler } from "./middlewares/error.middleware.js";
-import userRoutes from "./routes/user.routes.js";
+import userRoute from "./routers/user.router.js";
+import { dbConnection } from "./config/db.connection.js";
 
 const app = express();
-const PORT = 5000;
 
-// Express config
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(morgan("dev"));
-app.use("/api/users", userRoutes);
 
-// Passport config
-initializePassport();
-app.use(passport.initialize());
+app.use("/api/users", userRoute);
 
-// Mongo config
-mongoose
-  .connect(config.MONGO_URI)
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+const PORT = 8081;
 
-// Routes
-app.use("/api", routes);
+dbConnection().then(() => console.log('Connect to MongoDB'));
 
-app.use(errorHandler);
-
-app.use("*", (req, res) => {
-  res.status(404).json({
-    message: "Page not found",
-    error: "Not found",
-  });
-});
-
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+const server = app.listen(PORT, () =>
+  console.log(`🚀 Server started on port http://localhost:${PORT}`),
+);
+server.on("error", (err) => console.log(err));
