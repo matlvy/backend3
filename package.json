@@ -1,22 +1,17 @@
 {
-  "name": "servermock",
+  "name": "backend3.4",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/server.js "
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
-    "mongoose": "^7.8.1"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^6.3.1"
-  },
-  "description": ""
+    "winston": "^3.14.2",
+    "winston-mongodb": "^5.1.1"
+  }
 }
