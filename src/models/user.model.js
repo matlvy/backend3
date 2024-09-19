@@ -1,4 +1,5 @@
 import { Schema, model } from "mongoose";
+import bcrypt, { genSaltSync } from "bcrypt";
 
 const userSchema = new Schema({
   name: {
@@ -25,5 +26,8 @@ const userSchema = new Schema({
   role: { type: String, enum: ["admin", "user"], default: "user" },
   pets: { type: Array },
 });
-
+userSchema.pre("save", async function (next) {
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
+});
 export const UserModel = model("users", userSchema);
