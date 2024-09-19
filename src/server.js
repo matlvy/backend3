@@ -11,9 +11,9 @@ app.use("/api/mocks", mocksRoute);
 
 const PORT = 8081;
 
-dbConnection().then(() => console.log("Connect to MongoDB"));
+dbConnection().then(() => console.log("Connected to MongoDB"));
 
 const server = app.listen(PORT, () =>
-  console.log(`Server started on port http://localhost:${PORT}`)
+  console.log(`Server is running on port http://localhost:${PORT}`)
 );
 server.on("error", (err) => console.log(err));
