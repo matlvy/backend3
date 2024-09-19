@@ -1,5 +1,5 @@
 import express from "express";
-import userRoute from "./routers/user.router.js";
+import mocksRoute from "./routers/mocks.router.js";
 import { dbConnection } from "./config/db.connection.js";
 
 const app = express();
@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/users", userRoute);
+app.use("/api/mocks", mocksRoute);
 
 const PORT = 8081;
 

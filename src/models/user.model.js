@@ -17,6 +17,13 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  password: {
+    type: String,
+    required: true,
+    default: "coder123",
+  },
+  role: { type: String, enum: ["admin", "user"], default: "user" },
+  pets: { type: Array },
 });
 
 export const UserModel = model("users", userSchema);

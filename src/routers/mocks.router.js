@@ -3,6 +3,6 @@ import { Router } from "express";
 const router = Router();
 
 router.post("/create", userController.createUser);
-router.get("/", userController.getUsers);
+router.get("/mockingusers", userController.getUsers);
 
 export default router;
