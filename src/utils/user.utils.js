@@ -13,5 +13,6 @@ export const generateUser = () => {
     email: faker.internet.email(),
     website: faker.internet.url(),
     image: faker.image.imageUrl(),
+    pets: [faker.animal.dog()],
   };
 };
