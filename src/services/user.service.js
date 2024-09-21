@@ -1,14 +1,14 @@
 import { UserModel } from "../models/user.model.js";
 import { generateUser } from "../utils/user.utils.js";
+import { generatePet } from "../utils/user.utils.js";
 
 export const createUsersMock = async (cant = 50) => {
   try {
-    const usersArray = [];
+    let users = [];
     for (let i = 0; i <= cant; i++) {
-      const user = generateUser();
-      usersArray.push(user);
+      users.push(generateUser());
     }
-    return await UserModel.create(usersArray);
+    return await UserModel.create(users);
   } catch (error) {
     throw new Error(error);
   }

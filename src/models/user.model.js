@@ -10,14 +10,6 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  website: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
   password: {
     type: String,
     required: true,
