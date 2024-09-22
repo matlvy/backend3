@@ -17,3 +17,11 @@ export const getUsers = async (req, res, next) => {
     next(error);
   }
 };
+export const getPets = async (req, res, next) => {
+  try {
+    const response = await userService.getPets();
+    res.json(response);
+  } catch (error) {
+    next(error);
+  }
+};

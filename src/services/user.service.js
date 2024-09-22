@@ -19,3 +19,10 @@ export const getUsers = async () => {
     throw new Error(error);
   }
 };
+export const getPets = async () => {
+  try {
+    return await UserModel.where("pets").select("pets");
+  } catch (error) {
+    throw new Error(error);
+  }
+};
