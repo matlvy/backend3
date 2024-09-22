@@ -1,6 +1,5 @@
 import { UserModel } from "../models/user.model.js";
 import { generateUser } from "../utils/user.utils.js";
-import { generatePet } from "../utils/user.utils.js";
 
 export const createUsersMock = async (cant = 50) => {
   try {
@@ -13,7 +12,6 @@ export const createUsersMock = async (cant = 50) => {
     throw new Error(error);
   }
 };
-
 export const getUsers = async () => {
   try {
     return await UserModel.find({});

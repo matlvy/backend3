@@ -9,7 +9,6 @@ export const createUser = async (req, res, next) => {
     next(error);
   }
 };
-
 export const getUsers = async (req, res, next) => {
   try {
     const response = await userService.getUsers();
