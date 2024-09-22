@@ -16,10 +16,15 @@ const userSchema = new Schema({
     default: "coder123",
   },
   role: { type: String, enum: ["admin", "user"], default: "user" },
-  pets: { type: Array },
+  pets: [
+    {
+      specie: { type: String },
+    },
+  ],
 });
 userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, 10);
   next();
 });
+
 export const UserModel = model("users", userSchema);

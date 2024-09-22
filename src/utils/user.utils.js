@@ -7,9 +7,9 @@ export const createHash = (password) =>
 export const isValidPassword = (user, password) =>
   bcrypt.compareSync(password, user.password);
 
-export const generateUser = (cant = 2) => {
+export const generateUser = (cant = 5) => {
   let pets = [];
-  for (let i = 0; i < cant; i++) {
+  for (let i = 0; i <= cant; i++) {
     pets.push(generatePet());
   }
   return {
