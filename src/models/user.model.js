@@ -18,7 +18,7 @@ const userSchema = new Schema({
   role: { type: String, enum: ["admin", "user"], default: "user" },
   pets: [
     {
-      specie: { type: String },
+      specie: { type: String, required: true },
     },
   ],
 });
