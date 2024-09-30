@@ -1,28 +1,47 @@
 components:
   parameters:
     schemas:
-      SchemaBodyNoticia:
+      User:
         type: object
         required:
-          - title
-          - body
-          - author
-          - image
+          - first_name
+          - last_name
+          - age
+          - email
+          - password
         properties:
-          title:
+          first_name:
             type: string
-            description: Título de la noticia
-            example: Se anuncian lluvias para mañana
-          body:
+            description: first_name
+          last_name:
             type: string
-            description: Cuerpo de la noticia    
-            example: Se anuncian lluvias para mañana martes por la tarde, con descenso de la temperatura.....
-          author:
+            description: last_name
+          age:
+            type: integer
+            description: age
+          email:
             type: string
-            description: Autor de la noticia
-            example: Franco Galeano
-          image:
+            description: email address
+          password:
             type: string
-            description: Imagen de la noticia
-            example: https://dfsdf.com/asdad.png
-      # SchemaBodyActualizacionNoticia:      
+            description: password
+      login: 
+        type: object
+        required:   
+          - email
+          - password
+        properties:  
+          email:
+            type: string
+            description: Email del usuario 
+          password:
+            type: string
+            description: Password del usuario
+        example:
+          email: juan@mail.com
+          password: abc123def456
+  securitySchemes:
+    BearerAuth: 
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

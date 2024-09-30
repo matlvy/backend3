@@ -1,76 +1,36 @@
 components:
   schema:
-    Noticias:
-      RespuestaRegistro:
+    Users:
+      User:
         type: object
-        properties:
-          id:
+        properties: 
+          status:
+            type: number
+            description: Código de estado de la petición
+          message:
             type: string
-            description: Id de la noticia
-          title:
+            description: Estado de la petición
+          data:
             type: string
-            description: Titulo de la noticia
-          body:
-            type: string
-            description: Cuerpo de la noticia
-          author:
-            type: string
-            description: autor de la noticia
-          image:
-            type: string
-            decription: url de la imagen de la noticia
-          date:
-            type: date
-            description: fecha de publicacion de la noticia
-        example:    
-          id: dhas89das9d9aspd05asdasdj
-          title: ¡Se viene la lluvia!
-          body: f.......................
-          author: Franco Galeano
-          image: http://sdfsdf.com/sdfsd.jpg
-          Date: 23/09/2024
-      RespuestaGetAll:
-        type: array
-        items:
-          properties:
-            id:
-              type: string
-              description: Id de la noticia
-            title:
-              type: string
-              description: Titulo de la noticia
-            body:
-              type: string
-              description: Cuerpo de la noticia
-            author:
-              type: string
-              description: autor de la noticia
-            image:
-              type: string
-              decription: url de la imagen de la noticia
-            date:      
-              type: date
-              description: fecha de publicacion de la noticia   
-          example:    
-            id: dhas89das9d9aspd05asdasdj
-            title: ¡Se viene la lluvia!
-            body: f.......................
-            author: Franco Galeano
-            image: http://sdfsdf.com/sdfsd.jpg
-            Date: 23/09/2024       
-      NotFound: 
-        type: object
-        properties:
-          msg:
-            type: string
-            description: No se encontro el id en la base de datos
+            description: Token del usuario autenticado
         example:
-          msg: No se encontro el id adas8d7asd87asdggjsad en la base de datos    
-      InternalServerError:
+          status: 200
+          message: Success
+          data: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGU1MzZhZjU5ZGM3ZDcwZTczZDhjYWMiLCJpYXQiOjE2OTMzOTMzODIsImV4cCI6MTY5MzM5NDI4Mn0.3t3rqyv_3CPzd6yNnJgPvifmw2IBvY0Il7eqc4Zgh_w    
+      profile:
         type: object
         properties:
-          msg:
+          status:
+            type: number
+            description: Código de estado de la petición
+          message:
             type: string
-            description: Internal Server Error
+            description: Estado de la petición
+          data:
+            type: object
+            description: Datos del usuario autenticado          
         example:
-          msg: Internal Server Error                            
+          status: 200
+          message: Success
+          data: data
+

@@ -1,11 +1,12 @@
 import express from 'express';
-import cors from 'cors';
 import morgan from 'morgan';
-import newsRouter from './routes/news.routes.js';
-import { logger } from './logs/news.logs.js';
-import { reqLog } from './middlewares/reqLog.js';
+import apiRouter from './routes/index.js';
+import { errorHandler } from './middlewares/errorHandler.js';
+import config from './config/config.js';
+import cookieParser from 'cookie-parser';
 import swaggerUI from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
+
 import { info } from './docs/info.js';
 
 const app = express();
@@ -14,19 +15,15 @@ const specs = swaggerJSDoc(info);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(specs));
 
-app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser(config.SECRET_COOKIES));
+app.use(express.urlencoded({extended: true}));
 app.use(morgan('dev'));
-app.use(reqLog);
 
-app.use('/news', newsRouter);
+app.use('/', apiRouter);
 
-const PORT = 8080;
+app.use(errorHandler);
 
-const server = app.listen(PORT, () =>
-  logger.info(`🚀 Server started on port http://localhost:${PORT}`),
-);
-server.on("error", (err) => console.log(err));
+const PORT = config.PORT;
 
-export default app;
+app.listen(PORT, () => console.log(`SERVER UP ON PORT ${PORT}`));
