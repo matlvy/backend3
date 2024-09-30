@@ -17,3 +17,5 @@
     at new Promise (<anonymous>)
     at promiseOrCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.8\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
 [2024-09-29T23:28:45.516] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-09-29T23:38:56.499] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-09-29T23:38:56.538] [INFO] default - Conectado a MongoDB!
