@@ -31,4 +31,9 @@ export default class NewsRepository {
         const deleteNew = await this.dao.deleteNew(id);
         return deleteNew;
     }
+    
+    async deleteAllNews() {
+        const deleteNew = await this.dao.deleteAllNews();
+        return deleteNew;
+    }
 }

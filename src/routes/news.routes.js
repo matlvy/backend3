@@ -7,6 +7,7 @@ router.get("/", newsController.getAllNewsCtr);
 router.get("/:id", newsController.getNewCtr);
 router.post("/", newsController.createNewCtr);
 router.put('/:id', newsController.updateNewCtr);
-router.delete('/:id', newsController.deleteNewCtr);
+router.delete('/', newsController.deleteAllNews);
+router.delete('/id/:id', newsController.deleteNewCtr);
 
 export default router;

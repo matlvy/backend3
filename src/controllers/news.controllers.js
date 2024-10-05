@@ -4,6 +4,7 @@ import {
   createNew,
   updateNew,
   deleteNew,
+  delAllNews
 } from "../services/news.services.js";
 
 export async function getAllNewsCtr(req, res) {
@@ -23,7 +24,7 @@ export async function getNewCtr(req, res) {
     if (!news) res.status(404).json({msg: `No se encontró el id ${id} en la base de datos.`}); 
     else res.status(200).json(news);
   } catch (error) {
-    res.status(501).send(error.message);
+    throw new Error(error.message);
   }
 }
 
@@ -71,6 +72,15 @@ export async function deleteNewCtr(req, res) {
     if (!news) res.status(404).json({msg: `No se encontró el id ${id} en la base de datos.`}); 
     else res.status(200).json(news);
     
+  } catch (error) {
+    res.status(501).send(error.message);
+  }
+}
+
+export async function deleteAllNews(req, res) {
+  try {
+    await delAllNews();
+    res.status(200).json({msg: 'delete all news ok'});
   } catch (error) {
     res.status(501).send(error.message);
   }

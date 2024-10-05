@@ -26,3 +26,8 @@ export const deleteNew = async(id) =>{
     const deleteNew = await newsRepository.deleteNew(id);
     return deleteNew;
 };
+
+export const delAllNews = async() =>{
+    const deleteNew = await newsRepository.deleteAllNews();
+    return deleteNew;
+};

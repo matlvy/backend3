@@ -41,6 +41,10 @@ export const getAllNews = async()=> {
     return await DAO.deleteNew(id)
   }
   
+  export const deleteAllNews = async() => {
+    return await DAO.deleteAllNews()
+  }
+
   export const getDao = ()=> {
     return DAO;
   }
