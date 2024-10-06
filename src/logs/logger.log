@@ -3469,3 +3469,25 @@
 [2024-10-05T23:32:43.286] [INFO] default - POST /news
 [2024-10-05T23:32:43.300] [INFO] default - DELETE /news/id/6701f6cb7283139518b0003c
 [2024-10-05T23:32:43.341] [INFO] default - GET /news/6701f6cb7283139518b0003c
+[2024-10-05T23:54:23.781] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:54:23.807] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:54:42.869] [INFO] default - Server started on port http://localhost:8080
+[2024-10-05T23:54:42.896] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:55:23.812] [INFO] default - Server started on port http://localhost:8080
+[2024-10-05T23:55:23.839] [INFO] default - Conectado a MongoDB
+[2024-10-06T00:05:14.652] [INFO] default - DELETE /news
+[2024-10-06T00:05:14.672] [INFO] default - GET /news
+[2024-10-06T00:05:14.691] [INFO] default - POST /news
+[2024-10-06T00:05:14.703] [INFO] default - GET /news
+[2024-10-06T00:05:14.722] [INFO] default - POST /news
+[2024-10-06T00:05:14.727] [INFO] default - POST /news
+[2024-10-06T00:05:14.732] [INFO] default - GET /news/6701fe6a1b05f38cc1e935fc
+[2024-10-06T00:05:14.739] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-06T00:22:51.990] [INFO] default - DELETE /news
+[2024-10-06T00:22:52.004] [INFO] default - GET /news
+[2024-10-06T00:22:52.015] [INFO] default - POST /news
+[2024-10-06T00:22:52.020] [INFO] default - GET /news
+[2024-10-06T00:22:52.027] [INFO] default - POST /news
+[2024-10-06T00:22:52.033] [INFO] default - POST /news
+[2024-10-06T00:22:52.037] [INFO] default - GET /news/6702028c1b05f38cc1e93607
+[2024-10-06T00:22:52.042] [INFO] default - GET /news/507f191e810c19729de860ea
