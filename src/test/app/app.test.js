@@ -12,22 +12,21 @@ const createNewMock = () => {
   };
 };
 
-describe("Tests API News", () => {
+describe("Test API News", () => {
   beforeAll(async () => {
     await mongoose.connection.collections["news"].drop();
   });
-
-  test("[POST] /news", async () => {
+  test("[POST]/news", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
-    // console.log(response.body)
+    // console.log(response.body);
+    //const id= response.body._id;
     expect(response.body._id).toBeDefined();
     expect(response.body).toHaveProperty("_id");
     expect(response.body.title).toBe(doc.title);
     expect(response.body.body).toEqual(doc.body);
     expect(response.statusCode).toBe(200);
   });
-
   test("[GET] /news", async () => {
     const response = await request(app).get("/news");
     expect(response.statusCode).toBe(200);
@@ -36,7 +35,6 @@ describe("Tests API News", () => {
     const dateResponse = response.body[0].date;
     expect(dateResponse).toEqual(expect.stringContaining("2024"));
   });
-
   test("[GET] /news/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
@@ -51,25 +49,25 @@ describe("Tests API News", () => {
       `No se encontró el id ${idFaker} en la base de datos.`
     );
   });
-
-  test("[UPDATE] /news/{id}", async () => {
+  test("[UPDATE]/news/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
     expect(response.body._id).toBeDefined();
-    const docUpd = createNewMock();
+    const docUpdated = createNewMock();
     const responsePut = await request(app)
       .put(`/news/${response.body._id}`)
-      .send(docUpd);
+      .send(docUpdated);
     expect(responsePut.body._id).toBeDefined();
     expect(responsePut.statusCode).toBe(200);
   });
-
-  test("[DELETE] /news/{id}", async () => {
+  test("[DELETE]/news/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
     expect(response.body._id).toBeDefined();
-    const responseDel = await request(app).delete(`/news/id/${response.body._id}`);
-    expect(responseDel.statusCode).toBe(200);
+    const responseDelete = await request(app).delete(
+      `/news/id/${response.body._id}`
+    );
+    expect(responseDelete.statusCode).toBe(200);
     const responseGetById = await request(app).get(
       `/news/${response.body._id}`
     );

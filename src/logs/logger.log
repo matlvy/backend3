@@ -1853,3 +1853,1619 @@
 [2024-09-30T22:12:44.184] [INFO] default - POST /news
 [2024-09-30T22:12:44.197] [INFO] default - GET /news/66fb4c8c632eca3f736c770f
 [2024-09-30T22:12:44.209] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T13:11:13.712] [FATAL] default - MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Object.<anonymous>.Connection.openUri (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\connection.js:695:11)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:414:10
+    at promiseOrCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\helpers\promiseOrCallback.js:11:14)
+    at Mongoose.Object.<anonymous>.Mongoose._promiseOrCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:1290:10)
+    at Mongoose.Object.<anonymous>.Mongoose.connect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:413:20)
+    at Function.connect [as init] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:10:18)
+    at init (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\news.factory.js:13:18)
+    at SourceTextModule.evaluate (node:internal/vm/module:229:23)
+    at Runtime.linkAndEvaluateModule (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runtime\build\index.js:710:20)
+    at jestAdapter (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:75:5)
+    at runTestInternal (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runner\build\runTest.js:444:34)
+[2024-10-05T13:11:13.850] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:11:13.913] [INFO] default - POST /news
+[2024-10-05T13:11:29.727] [FATAL] default - MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Object.<anonymous>.Connection.openUri (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\connection.js:695:11)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:414:10
+    at promiseOrCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\helpers\promiseOrCallback.js:11:14)
+    at Mongoose.Object.<anonymous>.Mongoose._promiseOrCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:1290:10)
+    at Mongoose.Object.<anonymous>.Mongoose.connect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\index.js:413:20)
+    at Function.connect [as init] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:10:18)
+    at init (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\news.factory.js:13:18)
+    at SourceTextModule.evaluate (node:internal/vm/module:229:23)
+    at Runtime.linkAndEvaluateModule (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runtime\build\index.js:710:20)
+    at jestAdapter (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:75:5)
+    at runTestInternal (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\jest-runner\build\runTest.js:444:34)
+[2024-10-05T13:11:29.836] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:11:29.856] [INFO] default - POST /news
+[2024-10-05T13:11:39.886] [FATAL] default - MongooseError: Operation `news.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:188:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7)
+[2024-10-05T13:13:45.768] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:13:45.803] [INFO] default - POST /news
+[2024-10-05T13:13:45.828] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:17:06.564] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:17:06.585] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:17:06.630] [INFO] default - POST /news
+[2024-10-05T13:18:05.176] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:19:02.272] [INFO] default - GET /api/news
+[2024-10-05T13:20:40.485] [INFO] default - GET /api/news
+[2024-10-05T13:20:59.432] [INFO] default - GET /api/
+[2024-10-05T13:21:01.975] [INFO] default - GET /api
+[2024-10-05T13:21:11.889] [INFO] default - GET /
+[2024-10-05T13:21:27.186] [INFO] default - GET /news
+[2024-10-05T13:21:27.234] [FATAL] default - TypeError: Right-hand side of 'instanceof' is not callable
+    at Object.toObject (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\utils.js:341:11)
+    at model.Query.Object.<anonymous>.Query.find (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:2369:22)
+    at model.Query.Query [as constructor] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:134:10)
+    at new model.Query (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\model.js:5310:11)
+    at Function.find (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\model.js:2270:14)
+    at DaoMongo.getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:17:40)
+    at NewsRepository.getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:8:37)
+    at getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:8:41)
+    at getAllNewsCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:4:27)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at reqLog (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\middlewares\reqLog.js:4:3)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:188:7)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:214:15)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at query (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\middleware\query.js:45:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:175:3)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\application.js:181:10)
+    at Server.app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\express.js:39:9)
+    at Server.emit (node:events:519:28)
+    at parserOnIncoming (node:_http_server:1140:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[2024-10-05T13:21:33.886] [INFO] default - GET /news/
+[2024-10-05T13:21:33.903] [FATAL] default - TypeError: Right-hand side of 'instanceof' is not callable
+    at Object.toObject (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\utils.js:341:11)
+    at model.Query.Object.<anonymous>.Query.find (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:2369:22)
+    at model.Query.Query [as constructor] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:134:10)
+    at new model.Query (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\model.js:5310:11)
+    at Function.find (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\model.js:2270:14)
+    at DaoMongo.getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:17:40)
+    at NewsRepository.getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:8:37)
+    at getAllNews (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:8:41)
+    at getAllNewsCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:4:27)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at reqLog (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\middlewares\reqLog.js:4:3)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at logger (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\body-parser\lib\types\json.js:113:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:188:7)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:214:15)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at query (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\middleware\query.js:45:5)
+    at Layer.handle [as handle_request] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:328:13)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\router\index.js:175:3)
+    at Function.handle (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\application.js:181:10)
+    at Server.app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\express\lib\express.js:39:9)
+    at Server.emit (node:events:519:28)
+    at parserOnIncoming (node:_http_server:1140:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[2024-10-05T13:21:57.592] [INFO] default - GET //news/
+[2024-10-05T13:22:05.597] [INFO] default - GET /api/news
+[2024-10-05T13:22:46.128] [INFO] default - GET /api/news
+[2024-10-05T13:23:53.066] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:23:53.088] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:23:53.131] [INFO] default - POST /news
+[2024-10-05T13:27:30.277] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:31:17.044] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T13:31:17.069] [INFO] default - Conectado a MongoDB!
+[2024-10-05T13:31:17.120] [INFO] default - POST /news
+[2024-10-05T14:28:36.359] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T14:28:36.385] [INFO] default - Conectado a MongoDB!
+[2024-10-05T14:28:36.430] [INFO] default - POST /news
+[2024-10-05T14:30:06.339] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T14:30:06.362] [INFO] default - Conectado a MongoDB!
+[2024-10-05T14:30:06.404] [INFO] default - POST /news
+[2024-10-05T14:32:57.084] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T14:32:57.108] [INFO] default - Conectado a MongoDB!
+[2024-10-05T14:32:57.152] [INFO] default - POST /news
+[2024-10-05T14:55:44.730] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T14:55:44.755] [INFO] default - Conectado a MongoDB!
+[2024-10-05T14:55:44.800] [INFO] default - POST /news
+[2024-10-05T14:55:44.837] [INFO] default - GET /news
+[2024-10-05T14:56:42.260] [INFO] default - GET /api/news
+[2024-10-05T14:58:26.312] [INFO] default - GET /api/news/
+[2024-10-05T14:58:51.450] [INFO] default - GET /news/
+[2024-10-05T14:59:24.339] [INFO] default - GET /news/
+[2024-10-05T15:00:02.168] [INFO] default - POST /news/
+[2024-10-05T15:00:02.190] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:00:28.845] [INFO] default - POST /news/create?cant=30
+[2024-10-05T15:00:33.357] [INFO] default - POST /news/create
+[2024-10-05T15:00:37.696] [INFO] default - POST /news/
+[2024-10-05T15:00:37.714] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:00:46.857] [INFO] default - GET /news/
+[2024-10-05T15:02:14.485] [INFO] default - POST /news/createNewCtr
+[2024-10-05T15:03:22.189] [INFO] default - POST /news/
+[2024-10-05T15:03:22.210] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:05:05.788] [INFO] default - POST /news/
+[2024-10-05T15:05:05.805] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:06:40.918] [INFO] default - POST /news/
+[2024-10-05T15:06:40.963] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:07:21.325] [INFO] default - POST /news/generateData
+[2024-10-05T15:07:27.319] [INFO] default - POST /news
+[2024-10-05T15:07:27.350] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:07:31.554] [INFO] default - POST /news/
+[2024-10-05T15:07:31.588] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:07:53.621] [INFO] default - POST /news/create?cant=30
+[2024-10-05T15:08:02.471] [INFO] default - POST /news/create
+[2024-10-05T15:08:10.782] [INFO] default - POST /
+[2024-10-05T15:08:15.663] [INFO] default - POST /news/
+[2024-10-05T15:08:15.696] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:11:00.850] [INFO] default - POST /news/
+[2024-10-05T15:11:00.878] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:28
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:25:13)
+    at Object.send (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\clustering.js:91:7)
+    at Logger._log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:195:16)
+    at Logger.log (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:155:12)
+    at Logger.<computed> [as fatal] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\logger.js:235:10)
+    at DaoMongo.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\DAOS\mongo\news.mongo.dao.js:36:14)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at NewsRepository.createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\persistence\repository\news.repository.js:13:24)
+    at createNew (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\services\news.services.js:4:22)
+    at createNewCtr (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\src\controllers\news.controllers.js:28:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:11:32.971] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T15:11:32.995] [INFO] default - Conectado a MongoDB!
+[2024-10-05T15:11:35.973] [INFO] default - POST /news/
+[2024-10-05T15:11:35.980] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:11:39.124] [INFO] default - POST /news/
+[2024-10-05T15:11:39.126] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:13:30.170] [INFO] default - GET /news/
+[2024-10-05T15:13:49.718] [INFO] default - POST /news/
+[2024-10-05T15:13:49.739] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:13:58.735] [INFO] default - POST /news/
+[2024-10-05T15:13:58.740] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:14:07.605] [INFO] default - POST /news/
+[2024-10-05T15:14:07.611] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:14:23.679] [INFO] default - POST /news/
+[2024-10-05T15:14:23.684] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:14:25.347] [INFO] default - POST /news/
+[2024-10-05T15:14:25.351] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:14:36.884] [INFO] default - POST /news/
+[2024-10-05T15:14:36.887] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:14:41.143] [INFO] default - POST /news/
+[2024-10-05T15:14:41.146] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:14:44.994] [INFO] default - POST /news/
+[2024-10-05T15:14:44.996] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:14:47.697] [INFO] default - POST /news/
+[2024-10-05T15:14:47.698] [FATAL] default - Error: News validation failed: image: Path `image` is required., author: Path `author` is required., body: Path `body` is required., title: Path `title` is required.
+    at ValidationError.inspect (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2298:40)
+    at Object.format (node:internal/util/inspect:2155:10)
+    at basicLayout (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    author: ValidatorError: Path `author` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'author',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    body: ValidatorError: Path `body` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'body',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1347:13)
+        at SchemaType.doValidate (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1331:7)
+        at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\document.js:2977:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2024-10-05T15:16:15.760] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T15:16:15.800] [INFO] default - Conectado a MongoDB!
+[2024-10-05T15:16:54.553] [INFO] default - GET /news/
+[2024-10-05T15:17:08.432] [INFO] default - POST /news/
+[2024-10-05T15:17:08.453] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:17:33.507] [INFO] default - POST /news/
+[2024-10-05T15:17:33.516] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:17:39.393] [INFO] default - POST /news/
+[2024-10-05T15:17:39.399] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:17:56.137] [INFO] default - POST /news/
+[2024-10-05T15:17:56.142] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:18:02.405] [INFO] default - POST /news/
+[2024-10-05T15:18:02.410] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:18:25.541] [INFO] default - POST /news/
+[2024-10-05T15:18:25.550] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Trans armarium fuga incidunt calamitas amicitia conor dolorum." }
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:519:28)
+    at processIncomingData (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:564:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: {
+    title: 'Trans armarium fuga incidunt calamitas amicitia conor dolorum.'
+  },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-10-05T15:18:43.552] [INFO] default - POST /news/
+[2024-10-05T15:19:47.531] [INFO] default - GET /news/
+[2024-10-05T15:20:16.604] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T15:20:16.644] [INFO] default - Conectado a MongoDB!
+[2024-10-05T15:20:16.705] [INFO] default - POST /news
+[2024-10-05T15:20:16.738] [INFO] default - GET /news
+[2024-10-05T15:20:16.788] [INFO] default - POST /news
+[2024-10-05T15:20:52.601] [INFO] default - GET /news/67017da07ad839a3399c69be
+[2024-10-05T15:21:08.917] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T15:22:12.125] [INFO] default - POST /news/
+[2024-10-05T22:08:28.855] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T22:08:30.892] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T22:50:39.881] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T22:50:39.907] [INFO] default - Conectado a MongoDB!
+[2024-10-05T22:50:39.985] [INFO] default - POST /news
+[2024-10-05T22:50:40.018] [INFO] default - GET /news
+[2024-10-05T22:50:40.047] [INFO] default - POST /news
+[2024-10-05T22:50:40.057] [INFO] default - GET /news/6701ecf00cc024eaed3bcaf8
+[2024-10-05T22:50:40.070] [INFO] default - GET /news/67018360ae9857b150f56cb5
+[2024-10-05T22:51:37.856] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T22:51:37.878] [INFO] default - Conectado a MongoDB!
+[2024-10-05T22:51:37.922] [INFO] default - POST /news
+[2024-10-05T22:51:37.953] [INFO] default - GET /news
+[2024-10-05T22:51:37.986] [INFO] default - POST /news
+[2024-10-05T22:51:37.997] [INFO] default - GET /news/6701ed29e75259c881b1ab7d
+[2024-10-05T22:51:38.012] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T22:53:27.470] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T22:53:27.491] [INFO] default - Conectado a MongoDB!
+[2024-10-05T22:53:27.534] [INFO] default - POST /news
+[2024-10-05T22:53:27.563] [INFO] default - GET /news
+[2024-10-05T22:53:27.593] [INFO] default - POST /news
+[2024-10-05T22:53:27.604] [INFO] default - GET /news/6701ed97e5ac7c5e452e1716
+[2024-10-05T22:53:27.616] [INFO] default - GET /news/6701ed29e75259c881b1ab7d
+[2024-10-05T22:54:43.956] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T22:54:43.977] [INFO] default - Conectado a MongoDB!
+[2024-10-05T22:54:44.019] [INFO] default - POST /news
+[2024-10-05T22:54:44.051] [INFO] default - GET /news
+[2024-10-05T22:54:44.079] [INFO] default - POST /news
+[2024-10-05T22:54:44.092] [INFO] default - GET /news/6701ede4807124e61641f9e4
+[2024-10-05T22:54:44.105] [INFO] default - GET /news/6701ed29e75259c881b7d
+[2024-10-05T22:54:44.110] [FATAL] default - CastError: Cast to ObjectId failed for value "6701ed29e75259c881b7d" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:4921:21)
+    at model.Query.Object.<anonymous>.Query.then (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:5020:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"6701ed29e75259c881b7d"',
+  kind: 'ObjectId',
+  value: '6701ed29e75259c881b7d',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\bson\src\error.ts:16:5)
+      at new ObjectId (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.Object.<anonymous>.ObjectId.cast (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1651:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1639:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\schematype.js:1615:20)
+      at cast (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\cast.js:356:32)
+      at model.Query.Object.<anonymous>.Query.cast (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:5351:12)
+      at model.Query.Object.<anonymous>.Query._castConditions (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:2229:10)
+      at model.Query.<anonymous> (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\query.js:2529:8)
+      at model.Query._wrappedThunk [as _findOne] (D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+      at D:\Documents\Mati\Programming\BACKEND3\PRACTICES\backend3.10\node_modules\kareem\index.js:497:25
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  valueType: 'string'
+}
+[2024-10-05T22:59:42.729] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T22:59:42.750] [INFO] default - Conectado a MongoDB!
+[2024-10-05T22:59:42.795] [INFO] default - POST /news
+[2024-10-05T22:59:42.822] [INFO] default - GET /news
+[2024-10-05T22:59:42.851] [INFO] default - POST /news
+[2024-10-05T22:59:42.863] [INFO] default - GET /news/6701ef0e80cb6e70a6c1c4ce
+[2024-10-05T22:59:42.874] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:02:19.955] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T23:02:56.964] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:02:56.988] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:02:57.029] [INFO] default - POST /news
+[2024-10-05T23:02:57.060] [INFO] default - GET /news
+[2024-10-05T23:02:57.097] [INFO] default - POST /news
+[2024-10-05T23:02:57.108] [INFO] default - GET /news/6701efd157e17f6728e0fd31
+[2024-10-05T23:02:57.124] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:04:15.862] [INFO] default - GET /news/67018360ae9857b150f56cb4
+[2024-10-05T23:06:01.751] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:06:01.772] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:06:01.817] [INFO] default - POST /news
+[2024-10-05T23:06:01.847] [INFO] default - GET /news
+[2024-10-05T23:06:01.879] [INFO] default - POST /news
+[2024-10-05T23:06:01.890] [INFO] default - GET /news/6701f089942b5e4e58e0d6ef
+[2024-10-05T23:06:01.904] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:10:27.675] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:10:27.698] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:10:27.743] [INFO] default - POST /news
+[2024-10-05T23:10:27.772] [INFO] default - GET /news
+[2024-10-05T23:10:27.797] [INFO] default - POST /news
+[2024-10-05T23:10:27.808] [INFO] default - GET /news/6701f1933133bce9496ed3f4
+[2024-10-05T23:10:27.819] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:17:51.695] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:17:51.719] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:17:51.758] [INFO] default - POST /news
+[2024-10-05T23:17:51.803] [INFO] default - GET /news
+[2024-10-05T23:17:51.829] [INFO] default - POST /news
+[2024-10-05T23:17:51.839] [INFO] default - GET /news/6701f34f7cd621b4fa2c16be
+[2024-10-05T23:17:51.851] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:17:51.862] [INFO] default - POST /news
+[2024-10-05T23:17:51.872] [INFO] default - PUT /news/6701f34f7cd621b4fa2c16c2
+[2024-10-05T23:27:29.797] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:27:29.820] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:27:29.866] [INFO] default - POST /news
+[2024-10-05T23:27:29.892] [INFO] default - GET /news
+[2024-10-05T23:27:29.918] [INFO] default - POST /news
+[2024-10-05T23:27:29.930] [INFO] default - GET /news/6701f59134c5ef8a34bff0ed
+[2024-10-05T23:27:29.940] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:27:29.951] [INFO] default - POST /news
+[2024-10-05T23:27:29.963] [INFO] default - PUT /news/6701f59134c5ef8a34bff0f1
+[2024-10-05T23:27:29.979] [INFO] default - POST /news
+[2024-10-05T23:27:29.987] [INFO] default - DELETE /news/id/6701f59134c5ef8a34bff0f5
+[2024-10-05T23:32:43.095] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-10-05T23:32:43.118] [INFO] default - Conectado a MongoDB!
+[2024-10-05T23:32:43.163] [INFO] default - POST /news
+[2024-10-05T23:32:43.196] [INFO] default - GET /news
+[2024-10-05T23:32:43.226] [INFO] default - POST /news
+[2024-10-05T23:32:43.237] [INFO] default - GET /news/6701f6cb7283139518b00034
+[2024-10-05T23:32:43.248] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-10-05T23:32:43.260] [INFO] default - POST /news
+[2024-10-05T23:32:43.270] [INFO] default - PUT /news/6701f6cb7283139518b00038
+[2024-10-05T23:32:43.286] [INFO] default - POST /news
+[2024-10-05T23:32:43.300] [INFO] default - DELETE /news/id/6701f6cb7283139518b0003c
+[2024-10-05T23:32:43.341] [INFO] default - GET /news/6701f6cb7283139518b0003c
