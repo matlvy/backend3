@@ -1,33 +1,22 @@
-import express from "express";
-import cors from "cors";
+import "dotenv/config";
+import express, { json, urlencoded } from "express";
 import morgan from "morgan";
-import newsRouter from "./routes/news.routes.js";
-import { logger } from "./logs/news.logs.js";
-import { reqLog } from "./middlewares/reqLog.js";
-import swaggerUI from "swagger-ui-express";
-import swaggerJSDoc from "swagger-jsdoc";
-
-import { info } from "./docs/info.js";
+import cookieParser from "cookie-parser";
+import "./passport/jwt.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
+import MainRouter from "./routes/index.js";
+const mainRouter = new MainRouter();
 
 const app = express();
 
-const specs = swaggerJSDoc(info);
+app
+  .use(json())
+  .use(urlencoded({ extended: true }))
+  .use(morgan("dev"))
+  .use(cookieParser())
+  .use("/api", mainRouter.getRouter())
+  .use(errorHandler);
 
-app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
+const PORT = process.env.PORT || 8080;
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(morgan("dev"));
-app.use(reqLog);
-
-app.use("/news", newsRouter);
-
-const PORT = 8080;
-
-const server = app.listen(PORT, () =>
-  logger.info(`Server started on port http://localhost:${PORT}`)
-);
-server.on("error", (err) => console.log(err));
-
-export default app;
+app.listen(PORT, () => console.log(`Server OK PORT: ${PORT}`));
