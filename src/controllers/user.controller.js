@@ -25,3 +25,38 @@ export const getPets = async (req, res, next) => {
     next(error);
   }
 };
+export const updUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, email, password, role } = req.body;
+    const user = await userService.updateUser(id, req.body);
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({
+      error: "Error al actualizar el usuario",
+      details: error.message,
+    });
+  }
+};
+
+export const delUser = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const response = await userService.deleteUser(id);
+    res.json(response);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const delAllUsers = async (req, res) => {
+  try {
+    const user = await userService.deleteAllUsers({});
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({
+      error: "Error al eliminar el usuario",
+      details: error.message,
+    });
+  }
+};

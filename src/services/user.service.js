@@ -26,3 +26,24 @@ export const getPets = async () => {
     throw new Error(error);
   }
 };
+export const updateUser = async (id, body) => {
+  try {
+    return await UserModel.findByIdAndUpdate(id, body);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+export const deleteUser = async (id) => {
+  try {
+    return await UserModel.findByIdAndDelete(id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+export const deleteAllUsers = async () => {
+  try {
+    return await UserModel.deleteMany({});
+  } catch (error) {
+    throw new Error(error);
+  }
+};
