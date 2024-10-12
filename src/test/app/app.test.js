@@ -23,13 +23,11 @@ describe("TestAPI", () => {
       .post("/api/mocks/generateData")
       .send(doc);
     //console.log(response);
-    //const id= response.body._id;
-    //expect(response.body._id).toBeDefined();
-    //expect(response.body).toHaveProperty("_id");
+    expect(response._id).toBe(doc._id);
     expect(response.name).toBe(doc.name);
     expect(response.email).toBe(doc.email);
     expect(response.specie).toBe(doc.specie);
-    //expect(response.body.body).toEqual(doc.body);
+    expect(response.body.body).toEqual(doc.body);
     expect(response.statusCode).toBe(200);
   });
   /*
