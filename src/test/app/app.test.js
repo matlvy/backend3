@@ -17,7 +17,7 @@ describe("TestAPI", () => {
   beforeAll(async () => {
     await mongoose.connection.collections["users"].drop();
   });
-  test("[POST]", async () => {
+  test("[POST] /users", async () => {
     const doc = createNewMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
@@ -30,16 +30,16 @@ describe("TestAPI", () => {
     expect(response.body.body).toEqual(doc.body);
     expect(response.statusCode).toBe(200);
   });
-  /*
-  test("[GET] /news", async () => {
-    const response = await request(app).get("/news");
+
+  test("[GET] /users", async () => {
+    const response = await request(app).get("/api/mocks/mockingusers");
     expect(response.statusCode).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
-    expect(response.body).toHaveLength(1);
+    expect(response.body).toHaveLength(50);
     const dateResponse = response.body[0].date;
-    expect(dateResponse).toEqual(expect.stringContaining("2024"));
   });
-  test("[GET] /news/{id}", async () => {
+  /*
+  test("[GET] /users/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
     expect(response.body._id).toBeDefined();
@@ -53,7 +53,7 @@ describe("TestAPI", () => {
       `No se encontró el id ${idFaker} en la base de datos.`
     );
   });
-  test("[UPDATE]/news/{id}", async () => {
+  test("[UPDATE]/users/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
     expect(response.body._id).toBeDefined();
@@ -64,7 +64,7 @@ describe("TestAPI", () => {
     expect(responsePut.body._id).toBeDefined();
     expect(responsePut.statusCode).toBe(200);
   });
-  test("[DELETE]/news/{id}", async () => {
+  test("[DELETE]/users/{id}", async () => {
     const doc = createNewMock();
     const response = await request(app).post("/news").send(doc);
     expect(response.body._id).toBeDefined();
