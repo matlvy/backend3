@@ -64,4 +64,38 @@ describe("TestAPI", () => {
 
     expect(responseGetId.statusCode).toBe(200);
   });
+  test("[UPDATE] /users/{id}", async () => {
+    const doc = createNewMock();
+    const response = await request(app)
+      .post("/api/mocks/generateData")
+      .send(doc);
+    expect(response.body[0]._id).toBeDefined();
+    const docUpd = createNewMock();
+    const responsePut = await request(app)
+      .put(`/api/mocks/${response.body[0]._id}`)
+      .send(docUpd);
+    expect(response.body[0]._id).toBeDefined();
+    expect(responsePut.statusCode).toBe(200);
+  });
+  test("[DELETE] /user/{id}", async () => {
+    const doc = createNewMock();
+    const response = await request(app)
+      .post("/api/mocks/generateData")
+      .send(doc);
+    expect(response.body[0]._id).toBeDefined();
+    const responseDel = await request(app).delete(
+      `/api/mocks/${response.body[0]._id}`
+    );
+    expect(responseDel.statusCode).toBe(200);
+  });
+
+  test("[DELETE] /users/", async () => {
+    const doc = createNewMock();
+    const response = await request(app)
+      .post("/api/mocks/generateData")
+      .send(doc);
+    expect(response.body[0]._id).toBeDefined();
+    const responseDel = await request(app).delete("/api/mocks/");
+    expect(responseDel.statusCode).toBe(200);
+  });
 });
