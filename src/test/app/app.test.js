@@ -51,4 +51,17 @@ describe("TestAPI", () => {
     //console.log(response.body);
     expect(responseGetId.statusCode).toBe(200);
   });
+  test("[GET] /pets", async () => {
+    const doc = createNewMock();
+    const response = await request(app)
+      .post("/api/mocks/generateData")
+      .send(doc);
+    const responseGetId = await request(app).get(
+      "/api/mocks/mockingusers/pets"
+    );
+    //console.log(response.body[0].pets);
+    expect(response.body[0].pets).toBeDefined();
+
+    expect(responseGetId.statusCode).toBe(200);
+  });
 });

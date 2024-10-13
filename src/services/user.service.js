@@ -19,13 +19,6 @@ export const getUsers = async () => {
     throw new Error(error);
   }
 };
-export const getUser = async (id) => {
-  try {
-    return await UserModel.findById(id);
-  } catch (error) {
-    throw new Error(error);
-  }
-};
 export const getPets = async () => {
   try {
     return await UserModel.where("pets").select("pets");
@@ -33,6 +26,14 @@ export const getPets = async () => {
     throw new Error(error);
   }
 };
+export const getUser = async (id) => {
+  try {
+    return await UserModel.findById(id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
 export const updateUser = async (id, body) => {
   try {
     return await UserModel.findByIdAndUpdate(id, body);
