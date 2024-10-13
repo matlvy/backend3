@@ -22,7 +22,8 @@ describe("TestAPI", () => {
       .send(doc);
     //console.log(response.body);
     //console.log(doc);
-    expect(response._id).toBe(doc._id);
+    expect(response.body._id).toBeDefined();
+    expect(response.body).toHaveProperty("_id");
     expect(response.body.name).toBe(doc.name);
     expect(response.body.email).toBe(doc.email);
     expect(response.body.pets[0].specie).toBe(doc.pets.specie);
