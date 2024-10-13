@@ -1,14 +1,18 @@
 import * as userService from "../services/user.service.js";
 
-export const createUser = async (req, res, next) => {
+export const createUsers = async (req, res) => {
   try {
-    const { cant } = req.query;
-    const response = await userService.createUsersMock(cant);
-    res.status(200).json(response);
+    const { name, email, password, role } = req.body;
+    const user = await userService.createUsers(req.body);
+    res.json(user);
   } catch (error) {
-    next(error);
+    res.status(500).json({
+      error: "Error al crear el usuario",
+      details: error.message,
+    });
   }
 };
+
 export const getUsers = async (req, res, next) => {
   try {
     const response = await userService.getUsers();
@@ -17,7 +21,7 @@ export const getUsers = async (req, res, next) => {
     next(error);
   }
 };
-export const getAllPets = async (req, res, next) => {
+export const getPets = async (req, res, next) => {
   try {
     const response = await userService.getPets();
     res.json(response);
@@ -25,7 +29,7 @@ export const getAllPets = async (req, res, next) => {
     next(error);
   }
 };
-export const getUserById = async (req, res) => {
+export const getUser = async (req, res) => {
   try {
     const { id } = req.params;
     const user = await userService.getUser(id);
@@ -38,7 +42,7 @@ export const getUserById = async (req, res) => {
   }
 };
 
-export const updUser = async (req, res) => {
+export const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
     const { name, email, password, role } = req.body;
@@ -52,7 +56,7 @@ export const updUser = async (req, res) => {
   }
 };
 
-export const delUser = async (req, res, next) => {
+export const deleteUser = async (req, res, next) => {
   try {
     const { id } = req.params;
     const response = await userService.deleteUser(id);
@@ -62,7 +66,7 @@ export const delUser = async (req, res, next) => {
   }
 };
 
-export const delAllUsers = async (req, res) => {
+export const deleteAllUsers = async (req, res) => {
   try {
     const user = await userService.deleteAllUsers({});
     res.json(user);
