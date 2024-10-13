@@ -29,7 +29,7 @@ describe("TestAPI", () => {
     expect(response.body.pets[0].specie).toBe(doc.pets.specie);
     expect(response.statusCode).toBe(200);
   });
-  /*
+
   test("[GET] /users", async () => {
     const response = await request(app).get("/api/mocks/mockingusers");
     expect(response.statusCode).toBe(200);
@@ -43,9 +43,9 @@ describe("TestAPI", () => {
       .post("/api/mocks/generateData")
       .send(doc);
     const responseGetId = await request(app).get(
-      `/api/mocks/mockingusers/${response.body[0]._id}`
+      `/api/mocks/mockingusers/${response.body._id}`
     );
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body._id).toBeDefined();
     //console.log(response.body);
     expect(responseGetId.statusCode).toBe(200);
   });
@@ -58,7 +58,7 @@ describe("TestAPI", () => {
       "/api/mocks/mockingusers/pets"
     );
     //console.log(response.body[0].pets);
-    expect(response.body[0].pets).toBeDefined();
+    expect(response.body.pets).toBeDefined();
 
     expect(responseGetId.statusCode).toBe(200);
   });
@@ -67,12 +67,12 @@ describe("TestAPI", () => {
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body._id).toBeDefined();
     const docUpd = createNewMock();
     const responsePut = await request(app)
-      .put(`/api/mocks/${response.body[0]._id}`)
+      .put(`/api/mocks/${response.body._id}`)
       .send(docUpd);
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body._id).toBeDefined();
     expect(responsePut.statusCode).toBe(200);
   });
   test("[DELETE] /user/{id}", async () => {
@@ -80,9 +80,9 @@ describe("TestAPI", () => {
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body._id).toBeDefined();
     const responseDel = await request(app).delete(
-      `/api/mocks/${response.body[0]._id}`
+      `/api/mocks/${response.body._id}`
     );
     expect(responseDel.statusCode).toBe(200);
   });
@@ -92,8 +92,8 @@ describe("TestAPI", () => {
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body._id).toBeDefined();
     const responseDel = await request(app).delete("/api/mocks/");
     expect(responseDel.statusCode).toBe(200);
-  });*/
+  });
 });
