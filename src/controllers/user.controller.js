@@ -17,6 +17,18 @@ export const getUsers = async (req, res, next) => {
     next(error);
   }
 };
+export const getUserById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = await userService.updateUser(id);
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({
+      error: "Error al obtener el usuario",
+      details: error.message,
+    });
+  }
+};
 export const getPets = async (req, res, next) => {
   try {
     const response = await userService.getPets();
