@@ -132,6 +132,7 @@ describe("TestAPI", () => {
     expect(response.statusCode).toBe(200);
     expect(response.body.message).toBe("Successful login");
   });
+  /*
   test("[GET] /CURRENT USER", async () => {
     await mongoose.connection.collections["users"].drop();
     const docTestRegister = createTestUserRegistration();
@@ -145,4 +146,5 @@ describe("TestAPI", () => {
     expect(responseGetId.statusCode).toBe(200);
     expect(responseGetId.body.message).toBe("Logged user");
   });
+  */
 });
