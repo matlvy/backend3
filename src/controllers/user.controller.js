@@ -7,7 +7,7 @@ export const createUsers = async (req, res) => {
     res.json(user);
   } catch (error) {
     res.status(500).json({
-      error: "Error al crear el usuario",
+      error: "Error while creating the user",
       details: error.message,
     });
   }
@@ -36,7 +36,7 @@ export const getUser = async (req, res) => {
     res.json(user);
   } catch (error) {
     res.status(500).json({
-      error: "Error al obtener el usuario",
+      error: "Error while getting the user",
       details: error.message,
     });
   }
@@ -50,7 +50,7 @@ export const updateUser = async (req, res) => {
     res.json(user);
   } catch (error) {
     res.status(500).json({
-      error: "Error al actualizar el usuario",
+      error: "Error while trying to update the user",
       details: error.message,
     });
   }
@@ -72,7 +72,7 @@ export const deleteAllUsers = async (req, res) => {
     res.json(user);
   } catch (error) {
     res.status(500).json({
-      error: "Error al eliminar el usuario",
+      error: "Error while trying to erase the user",
       details: error.message,
     });
   }

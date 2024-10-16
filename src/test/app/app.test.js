@@ -11,6 +11,20 @@ const createNewMock = () => {
     pets: { specie: faker.animal.dog() },
   };
 };
+const createTestUserRegistration = () => {
+  return {
+    first_name: "Mr.",
+    last_name: "Test",
+    email: "test@test.com",
+    password: "1234",
+  };
+};
+const createTestUserLogin = () => {
+  return {
+    email: "test@test.com",
+    password: "1234",
+  };
+};
 
 describe("TestAPI", () => {
   beforeAll(async () => {
@@ -21,8 +35,8 @@ describe("TestAPI", () => {
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
-    console.log(response.body);
-    console.log(doc);
+    //console.log(response.body);
+    //console.log(doc);
     expect(response.body._id).toBeDefined();
     expect(response.body).toHaveProperty("_id");
     expect(response.body.first_name).toBe(doc.first_name);
@@ -97,5 +111,38 @@ describe("TestAPI", () => {
     expect(response.body._id).toBeDefined();
     const responseDel = await request(app).delete("/api/mocks/");
     expect(responseDel.statusCode).toBe(200);
+  });
+  test("[POST] /USER REGISTRATION", async () => {
+    const docTestRegister = createTestUserRegistration();
+    const response = await request(app)
+      .post("/api/auth/register")
+      .send(docTestRegister);
+    //console.log(response.body);
+    //console.log(docTest);
+    expect(response.statusCode).toBe(201);
+    expect(response.body.message).toBe("A new user has been created");
+  });
+  test("[POST] /USER LOGIN", async () => {
+    const docTestLogin = createTestUserLogin();
+    const response = await request(app)
+      .post("/api/auth/login")
+      .send(docTestLogin);
+    //console.log(response.body);
+    //console.log(docTest);
+    expect(response.statusCode).toBe(200);
+    expect(response.body.message).toBe("Successful login");
+  });
+  test("[GET] /CURRENT USER", async () => {
+    await mongoose.connection.collections["users"].drop();
+    const docTestRegister = createTestUserRegistration();
+    const docTestLogin = createTestUserLogin();
+    const response = await request(app)
+      .post("/api/auth/register", "/api/auth/login")
+      .send(docTestRegister, docTestLogin);
+    const responseGetId = await request(app).get("/api/auth/current");
+    console.log(responseGetId.body);
+
+    expect(responseGetId.statusCode).toBe(200);
+    expect(responseGetId.body.message).toBe("Logged user");
   });
 });

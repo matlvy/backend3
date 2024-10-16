@@ -3,7 +3,7 @@ import { generateToken } from "../utils/jwtFunctions.js";
 
 class AuthController {
   async login(req, res) {
-    console.log(req.user); // Recibimos el usuario desde el middleware de passport
+    console.log(req.user);
 
     const payload = {
       email: req.user.email,
@@ -14,23 +14,22 @@ class AuthController {
 
     res.cookie("token", token, {
       maxAge: 1000 * 60 * 2, // 2 minutos
-      httpOnly: true, // Solo se puede acceder a través de peticiones http
+      httpOnly: true,
     });
 
-    res.status(200).json({ message: "Login exitoso" });
+    res.status(200).json({ message: "Successful login" });
   }
 
   async loginError(req, res) {
-    res.status(401).json({ message: "Usuario o contraseña incorrecto" });
+    res.status(401).json({ message: "Incorrect user or password" });
   }
 
   async register(req, res) {
-    const { first_name, last_name, email, age, password, cart, role } =
-      req.body;
+    const { first_name, last_name, email, password } = req.body;
 
-    if (!first_name || !last_name || !email || !age || !password) {
+    if (!first_name || !last_name || !email || !password) {
       return res.status(400).json({
-        error: "Falta información",
+        error: "Missing information",
       });
     }
 
@@ -39,7 +38,7 @@ class AuthController {
 
       if (userExists) {
         return res.status(400).json({
-          error: "El usuario ya existe",
+          error: "The user already exists",
         });
       }
 
@@ -47,33 +46,30 @@ class AuthController {
         first_name,
         last_name,
         email,
-        age,
         password,
-        cart,
-        role,
       });
 
       await user.save();
 
-      res.status(201).json({ message: "Usuario creado" });
+      res.status(201).json({ message: "A new user has been created" });
     } catch (error) {
       res.status(500).json({
-        error: "Hubo un error",
+        error: "There was an error",
         details: error.message,
       });
     }
   }
 
   async current(req, res) {
-    console.log(req.user); // Recibimos el usuario desde el middleware de passport
+    console.log(req.user);
 
-    res.json({ message: "Usuario logueado", user: req.user });
+    res.json({ message: "Logged user", user: req.user });
   }
 
   async logout(req, res) {
     req.clearCookie("token");
 
-    res.json({ message: "Sesión cerrada" });
+    res.json({ message: "The session has been expired" });
   }
 }
 
