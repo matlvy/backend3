@@ -5,7 +5,8 @@ import { faker } from "@faker-js/faker";
 
 const createNewMock = () => {
   return {
-    name: faker.name.findName(),
+    first_name: faker.person.firstName(),
+    last_name: faker.person.lastName(),
     email: faker.internet.email(),
     pets: { specie: faker.animal.dog() },
   };
@@ -20,11 +21,12 @@ describe("TestAPI", () => {
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
-    //console.log(response.body);
-    //console.log(doc);
+    console.log(response.body);
+    console.log(doc);
     expect(response.body._id).toBeDefined();
     expect(response.body).toHaveProperty("_id");
-    expect(response.body.name).toBe(doc.name);
+    expect(response.body.first_name).toBe(doc.first_name);
+    expect(response.body.last_name).toBe(doc.last_name);
     expect(response.body.email).toBe(doc.email);
     expect(response.body.pets[0].specie).toBe(doc.pets.specie);
     expect(response.statusCode).toBe(200);
