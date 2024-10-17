@@ -3,7 +3,7 @@ import request from "supertest";
 import mongoose from "mongoose";
 import { faker } from "@faker-js/faker";
 
-const createNewMock = () => {
+const createMock = () => {
   return {
     first_name: faker.person.firstName(),
     last_name: faker.person.lastName(),
@@ -11,7 +11,7 @@ const createNewMock = () => {
     pets: { specie: faker.animal.dog() },
   };
 };
-const createUserRegistration = () => {
+const createUserRegister = () => {
   return {
     first_name: "Mr.",
     last_name: "Test",
@@ -31,7 +31,7 @@ describe("TestAPI", () => {
     await mongoose.connection.collections["users"].drop();
   });
   test("[POST] /users", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
@@ -54,7 +54,7 @@ describe("TestAPI", () => {
   });
 
   test("[GET] /users/{id}", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
@@ -66,7 +66,7 @@ describe("TestAPI", () => {
     expect(responseGetId.statusCode).toBe(200);
   });
   test("[GET] /pets", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
@@ -79,12 +79,12 @@ describe("TestAPI", () => {
     expect(responseGetId.statusCode).toBe(200);
   });
   test("[UPDATE] /users/{id}", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
     expect(response.body._id).toBeDefined();
-    const docUpd = createNewMock();
+    const docUpd = createMock();
     const responsePut = await request(app)
       .put(`/api/mocks/${response.body._id}`)
       .send(docUpd);
@@ -92,7 +92,7 @@ describe("TestAPI", () => {
     expect(responsePut.statusCode).toBe(200);
   });
   test("[DELETE] /user/{id}", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
@@ -104,7 +104,7 @@ describe("TestAPI", () => {
   });
 
   test("[DELETE] /users/", async () => {
-    const doc = createNewMock();
+    const doc = createMock();
     const response = await request(app)
       .post("/api/mocks/generateData")
       .send(doc);
@@ -113,12 +113,12 @@ describe("TestAPI", () => {
     expect(responseDel.statusCode).toBe(200);
   });
   test("[POST] /USER REGISTRATION", async () => {
-    const docUserRegistration = createUserRegistration();
+    const docUserRegister = createUserRegister();
     const response = await request(app)
       .post("/api/auth/register")
-      .send(docUserRegistration);
+      .send(docUserRegister);
     //console.log(response.body);
-    //console.log(docUserRegistration);
+    //console.log(docUserRegister);
     expect(response.statusCode).toBe(201);
     expect(response.body.message).toBe("User created");
   });
