@@ -51,7 +51,7 @@ class AuthController {
 
       await user.save();
 
-      res.status(201).json({ message: "A new user has been created" });
+      res.status(201).json({ message: "User created" });
     } catch (error) {
       res.status(500).json({
         error: "There was an error",
