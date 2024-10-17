@@ -1,32 +1,37 @@
 import { Schema, model } from "mongoose";
 import { createHash } from "../utils/hashFunctions.js";
 
-const userSchema = new Schema({
-  first_name: {
-    type: String,
-    required: true,
-  },
-  last_name: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    default: "coder123",
-  },
-  role: { type: String, enum: ["admin", "user"], default: "user" },
-  pets: [
-    {
-      specie: { type: String, required: true },
+const userSchema = new Schema(
+  {
+    first_name: {
+      type: String,
+      required: true,
     },
-  ],
-});
+    last_name: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+      default: "coder123",
+    },
+    role: { type: String, enum: ["admin", "user"], default: "user" },
+    pets: [
+      {
+        specie: { type: String, required: true },
+      },
+    ],
+  },
+  {
+    timestamps: true,
+  }
+);
 userSchema.pre("save", function (next) {
   if (this.email.includes("@") && this.email.includes(".")) {
     return next();
