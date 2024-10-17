@@ -3,7 +3,7 @@ import { generateToken } from "../utils/jwtFunctions.js";
 
 class AuthController {
   async login(req, res) {
-    console.log(req.user);
+    //console.log(req.user);
 
     const payload = {
       email: req.user.email,
@@ -61,7 +61,7 @@ class AuthController {
   }
 
   async current(req, res) {
-    console.log(req.user);
+    //console.log(req.user);
 
     res.json({ message: "Logged user", user: req.user });
   }

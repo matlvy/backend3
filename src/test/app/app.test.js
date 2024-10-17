@@ -11,7 +11,7 @@ const createNewMock = () => {
     pets: { specie: faker.animal.dog() },
   };
 };
-const createTestUserRegistration = () => {
+const createUserRegistration = () => {
   return {
     first_name: "Mr.",
     last_name: "Test",
@@ -19,7 +19,7 @@ const createTestUserRegistration = () => {
     password: "1234",
   };
 };
-const createTestUserLogin = () => {
+const createUserLogin = () => {
   return {
     email: "test@test.com",
     password: "1234",
@@ -113,22 +113,22 @@ describe("TestAPI", () => {
     expect(responseDel.statusCode).toBe(200);
   });
   test("[POST] /USER REGISTRATION", async () => {
-    const docTestRegister = createTestUserRegistration();
+    const docUserRegistration = createUserRegistration();
     const response = await request(app)
       .post("/api/auth/register")
-      .send(docTestRegister);
+      .send(docUserRegistration);
     //console.log(response.body);
-    //console.log(docTest);
+    //console.log(docUserRegistration);
     expect(response.statusCode).toBe(201);
-    expect(response.body.message).toBe("A new user has been created");
+    expect(response.body.message).toBe("User created");
   });
   test("[POST] /USER LOGIN", async () => {
-    const docTestLogin = createTestUserLogin();
+    const docUserLogin = createUserLogin();
     const response = await request(app)
       .post("/api/auth/login")
-      .send(docTestLogin);
+      .send(docUserLogin);
     //console.log(response.body);
-    //console.log(docTest);
+    //console.log(docUserLogin);
     expect(response.statusCode).toBe(200);
     expect(response.body.message).toBe("Successful login");
   });
