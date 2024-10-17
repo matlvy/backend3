@@ -7,6 +7,9 @@ import mocksRoute from "./routers/mocks.router.js";
 import cookieParser from "cookie-parser";
 import { initializePassport } from "./config/passport.config.js";
 import { dbConnection } from "./config/db.connection.js";
+import swaggerUI from "swagger-ui-express";
+import swaggerJSDoc from "swagger-jsdoc";
+import { info } from "./docs/info.js";
 
 const app = express();
 const PORT = 8081;
@@ -27,6 +30,10 @@ app.use(passport.initialize());
 
 // Mongoose Config
 dbConnection().then(() => console.log("Connected to MongoDB"));
+
+//Swagger Config
+const specs = swaggerJSDoc(info);
+app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 // Start server
 const server = app.listen(PORT, () =>
