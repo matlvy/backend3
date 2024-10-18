@@ -1,71 +1,61 @@
 components:
   schema:
-    Noticias:
-      RespuestaRegistro:
+    users:
+      registerResponse:
         type: object
         properties:
           id:
             type: string
-            description: Id de la noticia
-          title:
+            description: user's Id
+          first_name:
             type: string
-            description: Titulo de la noticia
-          body:
+            description: user's first name
+          last_name:
             type: string
-            description: Cuerpo de la noticia
-          author:
+            description: user's last name
+          email:
             type: string
-            description: autor de la noticia
-          image:
-            type: string
-            decription: url de la imagen de la noticia
-          date:
-            type: date
-            description: fecha de publicacion de la noticia
-        example:    
-          id: dhas89das9d9aspd05asdasdj
-          title: ¡Se viene la lluvia!
-          body: f.......................
-          author: Franco Galeano
-          image: http://sdfsdf.com/sdfsd.jpg
-          Date: 23/09/2024
-      RespuestaGetAll:
+            description: user's email
+          password:
+            type: password
+            description: user's password
+        example:
+          id: 67117f32d1fe6d4d8e0ccf81
+          first_name: John
+          last_name: Doe
+          email: johndoe@mail.com
+          password: 1234
+      GetAllResponse:
         type: array
         items:
           properties:
-            id:
+            first_name:
               type: string
-              description: Id de la noticia
-            title:
+              description: user's first name
+            last_name:
               type: string
-              description: Titulo de la noticia
-            body:
+              description: user's last name
+            email:
               type: string
-              description: Cuerpo de la noticia
-            author:
+              description: user's email
+            password:
               type: string
-              description: autor de la noticia
-            image:
-              type: string
-              decription: url de la imagen de la noticia
-            date:      
-              type: date
-              description: fecha de publicacion de la noticia   
-          example:    
-            id: dhas89das9d9aspd05asdasdj
-            title: ¡Se viene la lluvia!
-            body: f.......................
-            author: Franco Galeano
-            image: http://sdfsdf.com/sdfsd.jpg
-            Date: 23/09/2024       
-      NotFound: 
+              decription: user's password
+
+          example:
+            first_name: John
+            last_name: Doe
+            email: johndoe@mail.com
+            password: 1234
+
+      NotFound:
         type: object
         properties:
           msg:
             type: string
-            description: No se encontro el id en la base de datos
+            description: user not found
         example:
-          msg: No se encontro el id adas8d7asd87asdggjsad en la base de datos    
+          msg: UserId adas8d7asd87asdggjsad not found in the database
       InternalServerError:
         type: object
         properties:
@@ -73,4 +63,4 @@ components:
             type: string
             description: Internal Server Error
         example:
-          msg: Internal Server Error                            
+          msg: Internal Server Error

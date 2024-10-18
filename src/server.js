@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import morgan from "morgan";
 import passport from "passport";
 import authRoutes from "./routers/auth.router.js";
-import mocksRoute from "./routers/mocks.router.js";
+import userRoutes from "./routers/users.router.js";
 import cookieParser from "cookie-parser";
 import { initializePassport } from "./config/passport.config.js";
 import { dbConnection } from "./config/db.connection.js";
@@ -21,7 +21,7 @@ app.use(morgan("dev"));
 app.use(cookieParser());
 
 // Routes config
-app.use("/api/mocks", mocksRoute);
+app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
 // Passport Config

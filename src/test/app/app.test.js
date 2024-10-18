@@ -13,15 +13,15 @@ const createMock = () => {
 };
 const createUserRegister = () => {
   return {
-    first_name: "Mr.",
-    last_name: "Test",
-    email: "test@test.com",
+    first_name: "John",
+    last_name: "Doe",
+    email: "johndoe@mail.com",
     password: "1234",
   };
 };
 const createUserLogin = () => {
   return {
-    email: "test@test.com",
+    email: "johndoe@mail.com",
     password: "1234",
   };
 };
@@ -32,9 +32,7 @@ describe("TestAPI", () => {
   });
   test("[POST] /users", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
+    const response = await request(app).post("/api/users/").send(doc);
     //console.log(response.body);
     //console.log(doc);
     expect(response.body._id).toBeDefined();
@@ -47,7 +45,7 @@ describe("TestAPI", () => {
   });
 
   test("[GET] /users", async () => {
-    const response = await request(app).get("/api/mocks/mockingusers");
+    const response = await request(app).get("/api/users/");
     expect(response.statusCode).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
     expect(response.body).toHaveLength(1);
@@ -55,11 +53,9 @@ describe("TestAPI", () => {
 
   test("[GET] /users/{id}", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
+    const response = await request(app).post("/api/users/").send(doc);
     const responseGetId = await request(app).get(
-      `/api/mocks/mockingusers/${response.body._id}`
+      `/api/users/${response.body._id}`
     );
     expect(response.body._id).toBeDefined();
     //console.log(response.body);
@@ -67,12 +63,8 @@ describe("TestAPI", () => {
   });
   test("[GET] /pets", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
-    const responseGetId = await request(app).get(
-      "/api/mocks/mockingusers/pets"
-    );
+    const response = await request(app).post("/api/users/").send(doc);
+    const responseGetId = await request(app).get("/api/users/pets");
     //console.log(response.body[0].pets);
     expect(response.body.pets).toBeDefined();
 
@@ -80,36 +72,30 @@ describe("TestAPI", () => {
   });
   test("[UPDATE] /users/{id}", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
+    const response = await request(app).post("/api/users/").send(doc);
     expect(response.body._id).toBeDefined();
     const docUpd = createMock();
     const responsePut = await request(app)
-      .put(`/api/mocks/${response.body._id}`)
+      .put(`/api/users/${response.body._id}`)
       .send(docUpd);
     expect(response.body._id).toBeDefined();
     expect(responsePut.statusCode).toBe(200);
   });
   test("[DELETE] /user/{id}", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
+    const response = await request(app).post("/api/users/").send(doc);
     expect(response.body._id).toBeDefined();
     const responseDel = await request(app).delete(
-      `/api/mocks/${response.body._id}`
+      `/api/users/${response.body._id}`
     );
     expect(responseDel.statusCode).toBe(200);
   });
 
   test("[DELETE] /users/", async () => {
     const doc = createMock();
-    const response = await request(app)
-      .post("/api/mocks/generateData")
-      .send(doc);
+    const response = await request(app).post("/api/users/").send(doc);
     expect(response.body._id).toBeDefined();
-    const responseDel = await request(app).delete("/api/mocks/");
+    const responseDel = await request(app).delete("/api/users/");
     expect(responseDel.statusCode).toBe(200);
   });
   test("[POST] /USER REGISTRATION", async () => {

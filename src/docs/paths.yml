@@ -1,103 +1,104 @@
 paths:
-  /news:
+  /api/users/:
     post:
       tags:
-      - Noticias
-      summary: Registro de noticia en base de datos
+        - users
+      summary: User register in the database
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/parameters/schemas/SchemaBodyNoticia'
+              $ref: "#/components/parameters/schemas/userSchema"
         required: true
       responses:
         200:
-          description: se registró la noticia correctamente
+          description: user created successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schema/Noticias/RespuestaRegistro'
+                $ref: "#/components/schema/users/registerResponse"
         404:
-          description: error al buscar una noticia
+          description: error while creating the user
           content:
             application/json:
               schema:
-                $ref: '#/components/schema/Noticias/NotFound'
+                $ref: "#/components/schema/users/NotFound"
+        500:
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/InternalServerError"
+
+    get:
+      tags:
+        - users
+      summary: Users List
+      responses:
+        200:
+          decription: users list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/GetAllResponse"
+        404:
+          description: error while getting the users
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/NotFound"
         500:
           description: error interno del servidor
           content:
             application/json:
               schema:
-                $ref: '#/components/schema/Noticias/InternalServerError'
+                $ref: "#/components/schema/users/InternalServerError"
+  /api/users/{id}:
     get:
       tags:
-      - Noticias
-      summary: Lista de noticias
-      responses:
-        200:
-          decription: lista de noticias
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schema/Noticias/RespuestaGetAll'
-        404:
-          description: error al buscar las noticias
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schema/Noticias/NotFound'
-        500:
-          description: error interno del servidor
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schema/Noticias/InternalServerError'
-  /news/{id}:
-    get:
-      tags:
-      - Noticias
-      summary: Buscar noticia por id
-      parameters:
-        - in: path
-          name: id
-          required: true  
-          description: id referente a la noticia
-          schema:
-            type: string
-      responses:
-        200:
-          decription: Noticia encontrada
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schema/Noticias/RespuestaRegistro'  
-        404:
-          description: No se encuentra noticia con el id
-          content:
-            application/json:
-              schema:
-                $ref: '@/components/schema/Noticias/NotFound'  
-    put:
-      tags:
-      - Noticias
-      summary: edicion noticia
+        - users
+      summary: Getting user by Id
       parameters:
         - in: path
           name: id
           required: true
-          description: id de noticia
+          description: User Id
+          schema:
+            type: string
+      responses:
+        200:
+          decription: User found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/registerResponse"
+        404:
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: "@/components/schema/users/NotFound"
+    put:
+      tags:
+        - users
+      summary: User edition
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
           schema:
             type: string
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/parameters/schemas/SchemaBodyNoticia'        
+              $ref: "#/components/parameters/schemas/userSchema"
         required: true
       responses:
         200:
-          description: noticia actualizada
+          description: user updated
           content:
             application/json:
-              schema: 
-                $ref: '#/components/schema/Noticias/RespuestaRegistro'                     
+              schema:
+                $ref: "#/components/schema/users/registerResponse"
