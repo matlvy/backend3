@@ -25,7 +25,7 @@ components:
           last_name: Doe
           email: johndoe@mail.com
           password: 1234
-      GetAllResponse:
+      getAllResponse:
         type: array
         items:
           properties:

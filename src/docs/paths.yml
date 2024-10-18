@@ -3,7 +3,7 @@ paths:
     post:
       tags:
         - users
-      summary: User register in the database
+      summary: User register
       requestBody:
         content:
           application/json:
@@ -33,14 +33,14 @@ paths:
     get:
       tags:
         - users
-      summary: Users List
+      summary: Users list
       responses:
         200:
           decription: users list
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/GetAllResponse"
+                $ref: "#/components/schema/users/getAllResponse"
         404:
           description: error while getting the users
           content:
@@ -53,11 +53,42 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schema/users/InternalServerError"
+
+    delete:
+      tags:
+        - users
+      summary: Delete all the users
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        200:
+          description: user deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/registerResponse"
+        404:
+          description: error while creating the user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/NotFound"
+        500:
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/InternalServerError"
+
   /api/users/{id}:
     get:
       tags:
         - users
-      summary: Getting user by Id
+      summary: Get user by Id
       parameters:
         - in: path
           name: id
@@ -78,6 +109,31 @@ paths:
             application/json:
               schema:
                 $ref: "@/components/schema/users/NotFound"
+    delete:
+      tags:
+        - users
+      summary: Delete user by Id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
+      responses:
+        200:
+          decription: All the users have been deleted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/registerResponse"
+        404:
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: "@/components/schema/users/NotFound"
+
     put:
       tags:
         - users
@@ -102,3 +158,27 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schema/users/registerResponse"
+  /api/users/pets:
+    get:
+      tags:
+        - users
+      summary: Pets list
+      responses:
+        200:
+          decription: pets list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/getAllResponse"
+        404:
+          description: error while getting the pets
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/NotFound"
+        500:
+          description: error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/users/InternalServerError"
