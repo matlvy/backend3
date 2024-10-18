@@ -65,7 +65,6 @@ components:
         example:
           msg: Internal Server Error
 
-    Users:
       User:
         type: object
         properties:
