@@ -16,19 +16,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/registerResponse"
+                $ref: "#/components/schema/userSchema/registerResponse"
         404:
           description: error while creating the user
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/NotFound"
+                $ref: "#/components/schema/userSchema/NotFound"
         500:
           description: internal server error
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/InternalServerError"
+                $ref: "#/components/schema/userSchema/InternalServerError"
 
     get:
       tags:
@@ -40,19 +40,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/getAllResponse"
+                $ref: "#/components/schema/userSchema/getAllResponse"
         404:
           description: error while getting the users
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/NotFound"
+                $ref: "#/components/schema/userSchema/NotFound"
         500:
           description: error interno del servidor
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/InternalServerError"
+                $ref: "#/components/schema/userSchema/InternalServerError"
 
     delete:
       tags:
@@ -70,19 +70,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/registerResponse"
+                $ref: "#/components/schema/userSchema/registerResponse"
         404:
           description: error while creating the user
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/NotFound"
+                $ref: "#/components/schema/userSchema/NotFound"
         500:
           description: internal server error
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/InternalServerError"
+                $ref: "#/components/schema/userSchema/InternalServerError"
 
   /api/users/{id}:
     get:
@@ -102,13 +102,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/registerResponse"
+                $ref: "#/components/schema/userSchema/registerResponse"
         404:
           description: User not found
           content:
             application/json:
               schema:
-                $ref: "@/components/schema/users/NotFound"
+                $ref: "@/components/schema/userSchema/NotFound"
     delete:
       tags:
         - users
@@ -126,13 +126,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/registerResponse"
+                $ref: "#/components/schema/userSchema/registerResponse"
         404:
           description: User not found
           content:
             application/json:
               schema:
-                $ref: "@/components/schema/users/NotFound"
+                $ref: "@/components/schema/userSchema/NotFound"
 
     put:
       tags:
@@ -157,7 +157,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/registerResponse"
+                $ref: "#/components/schema/userSchema/registerResponse"
   /api/users/pets:
     get:
       tags:
@@ -169,16 +169,67 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/getAllResponse"
+                $ref: "#/components/schema/userSchema/getAllResponse"
         404:
           description: error while getting the pets
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/NotFound"
+                $ref: "#/components/schema/userSchema/NotFound"
         500:
           description: error interno del servidor
           content:
             application/json:
               schema:
-                $ref: "#/components/schema/users/InternalServerError"
+                $ref: "#/components/schema/userSchema/InternalServerError"
+
+  /api/auth/register:
+    post:
+      tags:
+        - Users
+      summary: User register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        200:
+          description: Register success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/parameters/schemas/userSchema"
+  /api/auth/login:
+    post:
+      tags:
+        - Users
+      summary: User login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/login"
+        required: true
+      responses:
+        200:
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/Users/User"
+  /api/auth/current:
+    get:
+      tags:
+        - Users
+      summary: User profile
+      responses:
+        200:
+          description: user's information
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/Users/profile"
+      security:
+        - BearerAuth: []

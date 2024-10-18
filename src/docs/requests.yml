@@ -25,3 +25,24 @@ components:
             type: string
             description: user's password
             example: 1234
+
+      login:
+        type: object
+        required:
+          - email
+          - password
+        properties:
+          email:
+            type: string
+            description: user's email
+            example: johndoe@mail.com
+          password:
+            type: string
+            description: user's password
+            example: 1234
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

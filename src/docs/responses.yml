@@ -1,6 +1,6 @@
 components:
   schema:
-    users:
+    userSchema:
       registerResponse:
         type: object
         properties:
@@ -20,7 +20,7 @@ components:
             type: password
             description: user's password
         example:
-          id: 67117f32d1fe6d4d8e0ccf81
+          id: 12117f32d1fe6d4d8e0ccf81
           first_name: John
           last_name: Doe
           email: johndoe@mail.com
@@ -64,3 +64,37 @@ components:
             description: Internal Server Error
         example:
           msg: Internal Server Error
+
+    Users:
+      User:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Request status code
+          message:
+            type: string
+            description: Request status
+          data:
+            type: string
+            description: Authenthicated user's Token
+        example:
+          status: 200
+          message: Success
+          data: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGU1MzZhZjU5ZGM3ZDcwZTczZDhjYWMiLCJpYXQiOjE2OTMzOTMzODIsImV4cCI6MTY5MzM5NDI4Mn0.3t3rqyv_3CPzd6yNnJgPvifmw2IBvY0Il7eqc4Zgh_w
+      profile:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Request status code
+          message:
+            type: string
+            description: Request status
+          data:
+            type: object
+            description: Authenticated user's information
+        example:
+          status: 200
+          message: Success
+          data: data
