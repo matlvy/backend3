@@ -14,13 +14,13 @@ import { info } from "./docs/info.js";
 const app = express();
 const PORT = 8081;
 
-// Express config
+// Express Config
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(cookieParser());
 
-// Routes config
+// Routes Config
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
@@ -35,7 +35,7 @@ dbConnection().then(() => console.log("Connected to MongoDB"));
 const specs = swaggerJSDoc(info);
 app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
 
-// Start server
+// Start Server
 const server = app.listen(PORT, () =>
   console.log(`Server is running on port ${PORT}`)
 );
