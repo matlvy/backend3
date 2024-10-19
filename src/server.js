@@ -13,7 +13,7 @@ import swaggerJSDoc from "swagger-jsdoc";
 import { info } from "./docs/info.js";
 
 const app = express();
-const PORT = config.PORT;
+const PORT = 8081;
 
 // Express Config
 app.use(express.json());
