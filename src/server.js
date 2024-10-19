@@ -6,14 +6,12 @@ import authRoutes from "./routers/auth.router.js";
 import userRoutes from "./routers/users.router.js";
 import cookieParser from "cookie-parser";
 import { initializePassport } from "./config/passport.config.js";
-import config from "./config/config.js";
-import { dbConnection } from "./config/db.connection.js";
 import swaggerUI from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
 import { info } from "./docs/info.js";
 
 const app = express();
-const PORT = config.PORT;
+const PORT = 8081;
 
 // Express Config
 app.use(express.json());
@@ -30,7 +28,16 @@ initializePassport();
 app.use(passport.initialize());
 
 // Mongoose Config
-dbConnection().then(() => console.log("Connected to MongoDB"));
+mongoose
+  .connect(
+    "mongodb+srv://mattlevyprg:coderhouse@cluster0.0nikfi0.mongodb.net/backend3"
+  )
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 //Swagger Config
 const specs = swaggerJSDoc(info);
