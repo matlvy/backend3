@@ -6,13 +6,14 @@ import authRoutes from "./routers/auth.router.js";
 import userRoutes from "./routers/users.router.js";
 import cookieParser from "cookie-parser";
 import { initializePassport } from "./config/passport.config.js";
+import { config } from "./config/config.js";
 import { dbConnection } from "./config/db.connection.js";
 import swaggerUI from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
 import { info } from "./docs/info.js";
 
 const app = express();
-const PORT = 8081;
+const PORT = config.PORT;
 
 // Express Config
 app.use(express.json());
