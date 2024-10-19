@@ -1,8 +1,6 @@
-import dotenv from "dotenv";
+import "dotenv/config";
 
-dotenv.config();
-
-export const config = {
+export default {
   PORT: process.env.PORT,
   MONGO_URI: process.env.MONGO_URI,
   JWT_SECRET: process.env.JWT_SECRET,

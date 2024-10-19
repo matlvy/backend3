@@ -6,7 +6,8 @@ import authRoutes from "./routers/auth.router.js";
 import userRoutes from "./routers/users.router.js";
 import cookieParser from "cookie-parser";
 import { initializePassport } from "./config/passport.config.js";
-import { config } from "./config/config.js";
+import config from "./config/config.js";
+import { dbConnection } from "./config/db.connection.js";
 import swaggerUI from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
 import { info } from "./docs/info.js";
@@ -29,14 +30,7 @@ initializePassport();
 app.use(passport.initialize());
 
 // Mongoose Config
-mongoose
-  .connect(config.MONGO_URI)
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+dbConnection().then(() => console.log("Connected to MongoDB"));
 
 //Swagger Config
 const specs = swaggerJSDoc(info);
