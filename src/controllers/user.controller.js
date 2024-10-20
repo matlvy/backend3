@@ -23,10 +23,15 @@ export const getUsers = async (req, res, next) => {
 };
 export const getPets = async (req, res, next) => {
   try {
-    const response = await userService.getPets();
-    res.json(response);
+    const { id } = req.params;
+    const user = await userService.getUser(id);
+    const pets = await userService.getPets();
+    res.json(user.pets);
   } catch (error) {
-    next(error);
+    res.status(500).json({
+      error: "Error while getting the user",
+      details: error.message,
+    });
   }
 };
 export const getUser = async (req, res) => {

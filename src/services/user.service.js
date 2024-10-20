@@ -16,7 +16,7 @@ export const getUsers = async () => {
 };
 export const getPets = async () => {
   try {
-    return await userModel.where("pets").select("pets");
+    return await userModel.find();
   } catch (error) {
     throw new Error(error);
   }
