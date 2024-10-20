@@ -1,0 +1,244 @@
+paths:
+  /api/users/:
+    post:
+      tags:
+        - Users
+      summary: Create user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        200:
+          description: user created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/registerResponse"
+        404:
+          description: error while creating the user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/NotFound"
+        500:
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/InternalServerError"
+
+    get:
+      tags:
+        - Users
+      summary: Get all the users
+      responses:
+        200:
+          decription: users list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/getAllResponse"
+        404:
+          description: error while getting the users
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/NotFound"
+        500:
+          description: error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/InternalServerError"
+
+    delete:
+      tags:
+        - Users
+      summary: Delete all the users
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        200:
+          description: user deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/registerResponse"
+        404:
+          description: error while creating the user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/NotFound"
+        500:
+          description: internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/InternalServerError"
+
+  /api/users/{id}:
+    get:
+      tags:
+        - Users
+      summary: Get user by Id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
+      responses:
+        200:
+          decription: User found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/registerResponse"
+        404:
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: "@/components/schema/userSchema/NotFound"
+
+    delete:
+      tags:
+        - Users
+      summary: Delete user by Id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
+      responses:
+        200:
+          decription: All the users have been deleted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/registerResponse"
+        404:
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: "@/components/schema/userSchema/NotFound"
+
+    put:
+      tags:
+        - Users
+      summary: Edit user
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        200:
+          description: user updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/registerResponse"
+
+  /api/users/{id}/pets:
+    get:
+      tags:
+        - Users
+      summary: Get the pets by user
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
+      responses:
+        200:
+          decription: pets list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/getAllResponse"
+        404:
+          description: error while getting the pets
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/NotFound"
+        500:
+          description: error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/userSchema/InternalServerError"
+
+  /api/auth/register:
+    post:
+      tags:
+        - Authentication
+      summary: User register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/userSchema"
+        required: true
+      responses:
+        201:
+          description: Register success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/parameters/schemas/userSchema"
+  /api/auth/login:
+    post:
+      tags:
+        - Authentication
+      summary: User login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/parameters/schemas/login"
+        required: true
+      responses:
+        200:
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/authentication/user"
+  /api/auth/current:
+    get:
+      tags:
+        - Authentication
+      summary: User profile
+      responses:
+        200:
+          description: user's information
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schema/authentication/profile"
+      security:
+        - BearerAuth: []

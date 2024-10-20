@@ -1,27 +1,51 @@
-import { UserModel } from "../models/user.model.js";
-import { generateUser } from "../utils/user.utils.js";
+import { userModel } from "../models/user.model.js";
 
-export const createUsersMock = async (cant = 50) => {
+export const createUsers = async (body) => {
   try {
-    let users = [];
-    for (let i = 0; i <= cant; i++) {
-      users.push(generateUser());
-    }
-    return await UserModel.create(users);
+    return await userModel.create(body);
   } catch (error) {
     throw new Error(error);
   }
 };
 export const getUsers = async () => {
   try {
-    return await UserModel.find({});
+    return await userModel.find({});
   } catch (error) {
     throw new Error(error);
   }
 };
 export const getPets = async () => {
   try {
-    return await UserModel.where("pets").select("pets");
+    return await userModel.find();
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+export const getUser = async (id) => {
+  try {
+    return await userModel.findById(id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const updateUser = async (id, body) => {
+  try {
+    return await userModel.findByIdAndUpdate(id, body);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+export const deleteUser = async (id) => {
+  try {
+    return await userModel.findByIdAndDelete(id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+export const deleteAllUsers = async () => {
+  try {
+    return await userModel.deleteMany({});
   } catch (error) {
     throw new Error(error);
   }

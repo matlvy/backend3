@@ -1,0 +1,100 @@
+components:
+  schema:
+    userSchema:
+      registerResponse:
+        type: object
+        properties:
+          id:
+            type: string
+            description: user's Id
+          first_name:
+            type: string
+            description: user's first name
+          last_name:
+            type: string
+            description: user's last name
+          email:
+            type: string
+            description: user's email
+          password:
+            type: password
+            description: user's password
+        example:
+          id: 12117f32d1fe6d4d8e0ccf81
+          first_name: John
+          last_name: Doe
+          email: johndoe@mail.com
+          password: 1234
+      getAllResponse:
+        type: array
+        items:
+          properties:
+            first_name:
+              type: string
+              description: user's first name
+            last_name:
+              type: string
+              description: user's last name
+            email:
+              type: string
+              description: user's email
+            password:
+              type: string
+              decription: user's password
+
+          example:
+            first_name: John
+            last_name: Doe
+            email: johndoe@mail.com
+            password: 1234
+
+      NotFound:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: user not found
+        example:
+          msg: UserId adas8d7asd87asdggjsad not found in the database
+      InternalServerError:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: Internal Server Error
+        example:
+          msg: Internal Server Error
+
+    authentication:
+      user:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Request status code
+          message:
+            type: string
+            description: Request status
+          data:
+            type: string
+            description: Authenthicated user's Token
+        example:
+          status: 200
+          message: Success
+          data: eyJhbGiOJ9.eyJ1cVZgh_w
+      profile:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Request status code
+          message:
+            type: string
+            description: Request status
+          data:
+            type: object
+            description: Authenticated user's information
+        example:
+          status: 200
+          message: Success
+          data: data
