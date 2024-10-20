@@ -3,6 +3,6 @@ services:
     build:
       context: .
     environment:
-      NODE_ENV: production
+      NODE_ENV: dev
     ports:
       - 8081:8081
