@@ -61,13 +61,15 @@ describe("TestAPI", () => {
     //console.log(response.body);
     expect(responseGetId.statusCode).toBe(200);
   });
-  test("[GET] /pets", async () => {
+  test("[GET] /users/{id}/pets", async () => {
     const doc = createMock();
     const response = await request(app).post("/api/users/").send(doc);
-    const responseGetId = await request(app).get("/api/users/pets");
-    //console.log(response.body[0].pets);
+    const responseGetId = await request(app).get(
+      `/api/users/${response.body._id}/pets`
+    );
+    expect(response.body._id).toBeDefined();
+    //console.log(response.body.pets);
     expect(response.body.pets).toBeDefined();
-
     expect(responseGetId.statusCode).toBe(200);
   });
   test("[UPDATE] /users/{id}", async () => {
