@@ -109,6 +109,7 @@ paths:
             application/json:
               schema:
                 $ref: "@/components/schema/userSchema/NotFound"
+
     delete:
       tags:
         - Users
@@ -158,11 +159,19 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schema/userSchema/registerResponse"
-  /api/users/pets:
+
+  /api/users/{id}/pets:
     get:
       tags:
         - Users
-      summary: Get the pets
+      summary: Get the pets by user
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: User Id
+          schema:
+            type: string
       responses:
         200:
           decription: pets list
@@ -195,7 +204,7 @@ paths:
               $ref: "#/components/parameters/schemas/userSchema"
         required: true
       responses:
-        200:
+        201:
           description: Register success
           content:
             application/json:

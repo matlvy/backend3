@@ -4,7 +4,8 @@ export const info = {
     info: {
       title: "Backend III API",
       version: "1.0.0",
-      description: "Platforms: Node, Express, MongoDB.",
+      description:
+        "Platforms: Node.js, Express, MongoDB, Swagger, SuperTest-Jest, Docker.",
     },
     servers: [
       {
