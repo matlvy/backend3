@@ -125,8 +125,6 @@ A new user will be able to register, login and access the profile:
 
 ## Contact the author📌
 
-Feel free to contact the author: Matias Levy
-
 Linkedin:
 
 ```
