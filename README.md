@@ -11,12 +11,12 @@
 </table>
 </div>
 
-**Contents**
+**Contents**📌
 
 - [Getting Started](#getting-started)
-- [Características del proyecto Backend](#características-del-proyecto-backend)
-- [Tecnologías utilizadas Backend](#tecnologías-utilizadas-backend)
-- [Instalación](#instalación)
+- [About The Project](#about-the-project)
+- [Built With](#built-with)
+- [Installation](#installation)
   - [Backend](#levantar-el-backend)
   - [Uso](#uso)
   - [api/auth](#apiauth)
@@ -26,7 +26,7 @@
 
 **Backend III API Project** es una API realizada como proyecto final para el curso de Programación Backend III de Coderhouse.
 
-## Características del proyecto Backend📌
+## About The Project📌
 
 - Desarrollo de la arquitectura del servidor en base a capas definidas, con capa de ruteo, controladores, servicios, validaciones y capa de persistencia.
 - Persistencia mediante uso de bases de datos con Mongo Atlas para el ambiente de producción.
@@ -36,7 +36,7 @@
 - Verificación de cuenta de usuario registrado
 - Ruteo para el listado de users, aYes como su agregado a la base de datos, edición y eliminación
 
-## Tecnologías utilizadas Backend📌
+## Built With📌
 
 - NodeJS
 - Express JS
@@ -54,7 +54,7 @@
 - Swagger
 - Docker
 
-### Credenciales
+### Credenciales📌
 
 Un nuevo usuario podra registrarse, o bien loguearse mediante las siguientes credenciales:
 
@@ -63,7 +63,7 @@ user: test@mail.com
 password: 1234
 ```
 
-## Instalación📌
+## Installation📌
 
 ```
 GIT https://github.com/matlvy/backend3
@@ -75,7 +75,7 @@ SWAGGER
 
 ```
 
-### Levantar el backend:
+### Levantar el backend:📌
 
 ```
 cd backend
