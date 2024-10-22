@@ -54,43 +54,44 @@
 
 ## Installation📌
 
-```
 GIT HUB
 
+```
 https://github.com/matlvy/backend3
 
 
 DOCKER HUB
 
-https://hub.docker.com/r/mattlevyprg/backend3
-
 ```
+
+https://hub.docker.com/r/mattlevyprg/backend3
 
 ## Documentation
 
-```
-
 SWAGGER:
 
- Access the API's documentation in: http://localhost:8081/docs/
+Access the API's documentation in:
 
 ```
+http://localhost:8081/docs/
+
+
 
 ### Scripts:📌
 
 ```
 
 - Run the Start script: npm start
-This command will start the aplication in the Production environment.
+  This command will start the aplication in the Production environment.
 
 - Run the Development script: npm run dev
-This command will start the aplication in the Development environment.
+  This command will start the aplication in the Development environment.
 
 - Run the Test script in Windows OS: npm run test
-This command will run several tests, such as the authentication and mocking users aplication.
+  This command will run several tests, such as the authentication and mocking users aplication.
 
 - Run the Test script in Linux OS: npm run test:linux
-This command will run several tests, such as the authentication and mocking users aplication.
+  This command will run several tests, such as the authentication and mocking users aplication.
 
 - To access the aplication locally: http://localhost:8081.
 
@@ -121,3 +122,4 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | DELETE   | Delete all the users |     | `                                                                                              |
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
+```
