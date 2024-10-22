@@ -43,9 +43,17 @@
 - Express JS
 - MongoDB
 - Mongoose
-- Bcrypt
 - Dotenv
+- Bcrypt
 - Json Web Token
+- Cookie-Parser
+- Morgan
+- Passport
+- Faker
+- SuperTest
+- Jest
+- Swagger
+- Docker
 
 ## Flujo del usuario📌
 
