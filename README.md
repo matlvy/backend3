@@ -66,7 +66,12 @@ password: 1234
 ## Instalación📌
 
 ```
-git clone https://github.com/matlvy/backend3
+GIT https://github.com/matlvy/backend3
+
+DOCKER HUB
+
+SWAGGER
+
 
 ```
 
