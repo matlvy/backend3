@@ -34,7 +34,7 @@
 - Encriptación de contraseñas mediante Bcrypt
 - Sistema de registro y login de usuarios
 - Verificación de cuenta de usuario registrado
-- Ruteo para el listado de users, así como su agregado a la base de datos, edición y eliminación
+- Ruteo para el listado de users, aYes como su agregado a la base de datos, edición y eliminación
 
 ## Tecnologías utilizadas Backend📌
 
@@ -88,17 +88,17 @@ A continuación se listan los endpoint correspondientes, junto con una breve des
 
 | Endpoint             | Http Req | Description           | Auth | Body                                                                                               |
 | -------------------- | -------- | --------------------- | ---- | -------------------------------------------------------------------------------------------------- |
-| `/api/auth/register` | POST     | USER REGISTER         | No   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/api/auth/login`    | POST     | USER LOGIN            | No   | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
-| `/api/auth/current`  | GET      | LOGGER USER'S PROFILE | No   | -                                                                                                  |
+| `/api/auth/register` | POST     | User register         | Yes  | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/api/auth/login`    | POST     | User login            | Yes  | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
+| `/api/auth/current`  | GET      | Logged user's profile | Yes  | -                                                                                                  |
 
 ### `/api/users`
 
-| Endpoint              | Http Req | Description                                | Auth | Body                                                                                               |
-| --------------------- | -------- | ------------------------------------------ | ---- | -------------------------------------------------------------------------------------------------- |
-| `/api/users/`         | POST     | Crear un usuario                           | Sí   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/:userId`            | GET      | Obtener carrito de un usuario              | Sí   | -                                                                                                  |
-| `/remove/:userId`     | PUT      | Eliminar todos los productos de un carrito | Sí   | -                                                                                                  |
-| `/:userId`            | PUT      | Agregar un producto al carrito             | Sí   | `{ "_id": "644ca048b68b415727b1fc2e", "quantity": 1 }`                                             |
-| `/:userId/:productId` | PUT      | Actualizar o remover un producto           | Sí   | `{ "quantity": 3 }`                                                                                |
-| `/:userId`            | DELETE   | Eliminar el carrito                        | Sí   | -                                                                                                  |
+| Endpoint | Http Req | Description | | Body |
+| --------------------- | -------- | -------------------------------- | | -------------------------------------------------------------------------------------------------- |
+| `/api/users/` | POST | Create a user | | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/api/users/:userId` | GET | Get a user by ID | | - |
+| `/api/users/:userId` | DELETE | Delete user by ID | | - |
+| `/api/users/:userId` | PUT | Edit user | | `{ "email": "johndoe@mail.com" }` |
+| `/:userId/:productId` | PUT | Actualizar o remover un producto | | `{ "quantity": 3 }` |
+| `/:userId` | DELETE | Eliminar el carrito | | - |
