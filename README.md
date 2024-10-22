@@ -23,7 +23,7 @@
 
 ## Getting Started📌
 
-**Backend III API Project** is an API developed for the Backend III course in Coderhouse.
+**Backend III API Project** is an API developed for the Backend III Coderhouse course.
 
 ## About The Project📌
 
