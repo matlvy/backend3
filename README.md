@@ -94,11 +94,11 @@ A continuación se listan los endpoint correspondientes, junto con una breve des
 
 ### `/api/users`
 
-| Endpoint | Http Req | Description | | Body |
-| --------------------- | -------- | -------------------------------- | | -------------------------------------------------------------------------------------------------- |
-| `/api/users/` | POST | Create a user | | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/api/users/:userId` | GET | Get a user by ID | | - |
-| `/api/users/:userId` | DELETE | Delete user by ID | | - |
-| `/api/users/:userId` | PUT | Edit user | | `{ "email": "johndoe@mail.com" }` |
-| `/:userId/:productId` | PUT | Actualizar o remover un producto | | `{ "quantity": 3 }` |
-| `/:userId` | DELETE | Eliminar el carrito | | - |
+| Endpoint              | Http Req | Description                      |     | Body                                                                                               |
+| --------------------- | -------- | -------------------------------- | --- | -------------------------------------------------------------------------------------------------- |
+| `/api/users/`         | POST     | Create a user                    |     | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/api/users/:userId`  | GET      | Get a user by ID                 |     | -                                                                                                  |
+| `/api/users/:userId`  | DELETE   | Delete user by ID                |     | -                                                                                                  |
+| `/api/users/:userId`  | PUT      | Edit user                        |     | `{ "email": "johndoe@mail.com" }`                                                                  |
+| `/:userId/:productId` | PUT      | Actualizar o remover un producto |     | `{ "quantity": 3 }`                                                                                |
+| `/:userId`            | DELETE   | Eliminar el carrito              |     | -                                                                                                  |
