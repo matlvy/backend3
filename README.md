@@ -91,7 +91,10 @@ http://localhost:8081/docs/
   This command will run several tests, such as the authentication and mocking users aplication.
 
 - To access the aplication locally:
-  ` http://localhost:8081`
+
+```
+http://localhost:8081`
+```
 
 ## Usage📌
 
