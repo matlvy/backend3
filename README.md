@@ -58,7 +58,7 @@
 GitHub
 
 ```
-https://github.com/matlvy/backend3
+https://github.com/matlvy/backend3.git
 ```
 
 DockerHub
@@ -69,9 +69,7 @@ https://hub.docker.com/r/mattlevyprg/backend3
 
 ## Documentation📌
 
-Swagger:
-
-Access the API's documentation in:
+Access the API's documentation in Swagger:
 
 ```
 http://localhost:8081/docs/
