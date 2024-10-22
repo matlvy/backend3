@@ -55,19 +55,13 @@
 - Swagger
 - Docker
 
-## Flujo del usuario📌
-
-El flujo de un usuario dentro de la aplicación considera que el mismo puede interactuar por la página de productos (inicio), así como el detalle de los mismos sin autenticarse. Sin embargo, para el acceso a las rutas protegidas (agregar productos, editar el carrito o eliminar productos del carrito), éste deberá primero loguearse (o registrarse). En caso de registrarse, recibirá un email a su casilla de correo registrada para la verificación de la cuenta, la cuál se realiza con el servicio de Sendgrid.
-
 ### Credenciales
 
-Para agregar productos al carrito, puede registrar un nuevo usuario, o bien loguearse mediante las siguientes credenciales:
-
-> Tener en cuenta en el caso del registro, que debe ingresarse un email válido, ya que el mismo deberá ser verificado para poder continuar.
+Un nuevo usuario podra registrarse, o bien loguearse mediante las siguientes credenciales:
 
 ```
 user: test@mail.com
-password: 123456
+password: 1234
 ```
 
 ## Instalación📌
@@ -83,13 +77,13 @@ git clone https://github.com/matlvy/backend3
 cd backend
 npm install
 npm run dev
+npm start
+
 ```
 
 ## Uso📌
 
 A continuación se listan los endpoint correspondientes, junto con una breve descripción, y en caso de corresponder, un ejemplo del body que reciben. También se indica en la columna "Auth", si la ruta debe ser authorizada por JWT antes de llegar al controlador.
-
-> Nota: Para probar la aplicación con POSTMAN, se debe comentar la línea que habilita el acceso mediante CORS
 
 ### `/api/auth`
 
