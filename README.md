@@ -17,24 +17,21 @@
 - [About The Project](#about-the-project)
 - [Built With](#built-with)
 - [Installation](#installation)
-  - [Backend](#levantar-el-backend)
-  - [Uso](#uso)
-  - [api/auth](#apiauth)
-  - [api/users](#apiusers)
+- [Scripts](#scripts)
+- [Usage](#usage)
 
 ## Getting Started📌
 
-**Backend III API Project** es una API realizada como proyecto final para el curso de Programación Backend III de Coderhouse.
+**Backend III API Project** is an API developed for the Backend III course in Coderhouse.
 
 ## About The Project📌
 
-- Desarrollo de la arquitectura del servidor en base a capas definidas, con capa de ruteo, controladores, servicios, validaciones y capa de persistencia.
-- Persistencia mediante uso de bases de datos con Mongo Atlas para el ambiente de producción.
-- Sistema de autenticación basado en JWT
-- Encriptación de contraseñas mediante Bcrypt
-- Sistema de registro y login de usuarios
-- Verificación de cuenta de usuario registrado
-- Ruteo para el listado de users, aYes como su agregado a la base de datos, edición y eliminación
+- Backend Server arquitecture development based on layers, routers, controllers, services, validations and persistance structure.
+- Persistance throught usage of Mongo Atlas databases for the Production environment.
+- Authentication system based on JWT
+- Password encryption based on Bcrypt
+- User register and login system
+- User registered validation system
 
 ## Built With📌
 
@@ -54,15 +51,6 @@
 - Swagger
 - Docker
 
-### Credenciales📌
-
-Un nuevo usuario podra registrarse, o bien loguearse mediante las siguientes credenciales:
-
-```
-user: test@mail.com
-password: 1234
-```
-
 ## Installation📌
 
 ```
@@ -75,36 +63,43 @@ SWAGGER
 
 ```
 
-### Levantar el backend:📌
+### Scripts:📌
 
 ```
-cd backend
+
 npm install
-npm run dev
 npm start
+npm run dev
 
 ```
 
-## Uso📌
+## Usage📌
 
-A continuación se listan los endpoint correspondientes, junto con una breve descripción, y en caso de corresponder, un ejemplo del body que reciben. También se indica en la columna "Auth", si la ruta debe ser authorizada por JWT antes de llegar al controlador.
+### Credentials
+
+A new user will be able to register, login and access the profile:
+
+```
+user: test@mail.com
+password: 1234
+```
 
 ### `/api/auth`
 
-| Endpoint             | Http Req | Description           | Auth | Body                                                                                               |
-| -------------------- | -------- | --------------------- | ---- | -------------------------------------------------------------------------------------------------- |
-| `/api/auth/register` | POST     | User register         | Yes  | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/api/auth/login`    | POST     | User login            | Yes  | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
-| `/api/auth/current`  | GET      | Logged user's profile | Yes  | -                                                                                                  |
+| Endpoint             | Http Req | Description           | Auth | Body                                                                                           |
+| -------------------- | -------- | --------------------- | ---- | ---------------------------------------------------------------------------------------------- |
+| `/api/auth/register` | POST     | User register         | Yes  | `{ "email": "johndoe@mail.com", "password" : "1234", "first_name": John, "last_name": "Doe" }` |
+| `/api/auth/login`    | POST     | User login            | Yes  | `{ "email": "johndoe@mail.com", "password" : "1234" }`                                         |
+| `/api/auth/current`  | GET      | Logged user's profile | Yes  | -                                                                                              |
 
 ### `/api/users`
 
-| Endpoint                  | Http Req | Description          |     | Body                                                                                               |
-| ------------------------- | -------- | -------------------- | --- | -------------------------------------------------------------------------------------------------- |
-| `/api/users/`             | POST     | Create a user        |     | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/api/users/:userId`      | GET      | Get a user by ID     |     | -                                                                                                  |
-| `/api/users/:userId`      | DELETE   | Delete user by ID    |     | -                                                                                                  |
-| `/api/users/:userId`      | PUT      | Edit user            |     | `{ "email": "johndoe@mail.com", "first_name": John, "last_name": "Doe"  }`                         |
-| `/api/users/`             | DELETE   | Delete all the users |     | `                                                                                                  |
-| `/api/users/`             | GET      | Get all the users    |     |                                                                                                    |
-| `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                    |
+| Endpoint                  | Http Req | Description          |     | Body                                                                                           |
+| ------------------------- | -------- | -------------------- | --- | ---------------------------------------------------------------------------------------------- |
+| `/api/users/`             | POST     | Create a user        |     | `{ "email": "johndoe@mail.com", "password" : "1234", "first_name": John, "last_name": "Doe" }` |
+| `/api/users/:userId`      | GET      | Get a user by ID     |     | -                                                                                              |
+| `/api/users/:userId`      | DELETE   | Delete user by ID    |     | -                                                                                              |
+| `/api/users/:userId`      | PUT      | Edit user            |     | `{ "email": "johndoe@mail.com", "first_name": John, "last_name": "Doe"  }`                     |
+| `/api/users/`             | DELETE   | Delete all the users |     | `                                                                                              |
+| `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
+| `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
