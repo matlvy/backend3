@@ -92,7 +92,7 @@ http://localhost:8081/docs/
 - To access the aplication locally:
 
 ```
-http://localhost:8081`
+http://localhost:8081
 ```
 
 ## Usage📌
