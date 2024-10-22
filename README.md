@@ -25,7 +25,7 @@
 
 **Backend III API Project** is an API developed for the Backend III Coderhouse course.
 
-## About The Project📌
+## About the Project📌
 
 - Backend Server arquitecture development based on layers, routers, controllers, services, validations and persistance structure.
 - Persistance through usage of Mongo Atlas databases for the Production environment.
@@ -34,7 +34,7 @@
 - User register and login system
 - User registered validation system
 
-## Built With📌
+## Built with📌
 
 - NodeJS
 - Express JS
@@ -76,7 +76,7 @@ Access the API's documentation in:
 http://localhost:8081/docs/
 ```
 
-### Scripts:📌
+### Scripts📌
 
 - Run the Start script: npm start
   This command will start the aplication in the Production environment.
