@@ -67,7 +67,7 @@ DockerHub
 https://hub.docker.com/r/mattlevyprg/backend3
 ```
 
-## Documentation
+## Documentation📌
 
 Swagger:
 
@@ -123,7 +123,7 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
 
-## Contact me📌
+## Contact me
 
 Matias Levy
 
