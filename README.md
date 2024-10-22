@@ -1,6 +1,6 @@
 <div align="center">
 
-# Backend III API Project
+# Backend III API
 
 <table class="no-border">
   <tr>
@@ -14,20 +14,14 @@
 **Tabla de contenidos**
 
 - [Introducción](#introducción)
-- [Backend URL](#backend-deployment-url)
-- [Frontend URL](#frontend-deployment-url)
 - [Características del proyecto Backend](#características-del-proyecto-backend)
-- [Características del proyecto Frontend](#características-del-proyecto-frontend)
 - [Tecnologías utilizadas Backend](#tecnologías-utilizadas-backend)
-- [Tecnologías utilizadas Frontend](#tecnologías-utilizadas-frontend)
 - [Flujo del usuario](#flujo-del-usuario)
 - [Instalación](#instalación)
   - [Backend](#levantar-el-backend)
-  - [Frontend](#levantar-el-frontend)
-- [Uso](#uso)
+  - [Uso](#uso)
   - [api/auth](#apiauth)
-  - [api/products](#apiproducts)
-  - [api/cart](#apicart)
+  - [api/users](#apiusers)
 
 ## Introducción📌
 
@@ -104,17 +98,7 @@ A continuación se listan los endpoint correspondientes, junto con una breve des
 | `/:userId`  | DELETE   | Eliminar un usuario                    | No   | -                                                                                                       |
 | `/`         | GET      | Authorizar un usuario con Bearer Token | Sí   | -                                                                                                       |
 
-### `/api/products`
-
-| Endpoint | Http Req | Description                   | Auth | Body                                                                                                                                                                                                    |
-| -------- | -------- | ----------------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/`      | GET      | Obtener todos los productos   | No   | -                                                                                                                                                                                                       |
-| `/:id`   | GET      | Obtener un producto por su Id | No   | -                                                                                                                                                                                                       |
-| `/`      | POST     | Guardar un producto           | Sí   | `{ "title": "Blackmore", "price": 359, "description": "Ut malesuada vitae neque sit amet congue. Suspendisse potenti. Mauris …", "url": "guitarra_12_xzmjnz", "stock": 8, "category": "instrumentos" }` |
-| `/:id`   | PUT      | Actualizar un producto        | Sí   | `{ "price": 389 }`                                                                                                                                                                                      |
-| `/:id`   | DELETE   | Eliminar un producto          | Sí   | -                                                                                                                                                                                                       |
-
-### `/api/cart`
+### `/api/users`
 
 | Endpoint              | Http Req | Description                                | Auth | Body                                                   |
 | --------------------- | -------- | ------------------------------------------ | ---- | ------------------------------------------------------ |
