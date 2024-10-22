@@ -16,7 +16,6 @@
 - [Introducción](#introducción)
 - [Características del proyecto Backend](#características-del-proyecto-backend)
 - [Tecnologías utilizadas Backend](#tecnologías-utilizadas-backend)
-- [Flujo del usuario](#flujo-del-usuario)
 - [Instalación](#instalación)
   - [Backend](#levantar-el-backend)
   - [Uso](#uso)
