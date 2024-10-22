@@ -54,13 +54,13 @@
 
 ## Installation📌
 
-GIT HUB
+GitHub
 
 ```
 https://github.com/matlvy/backend3
 ```
 
-DOCKER HUB
+DockerHub
 
 ```
 https://hub.docker.com/r/mattlevyprg/backend3
@@ -68,7 +68,7 @@ https://hub.docker.com/r/mattlevyprg/backend3
 
 ## Documentation
 
-SWAGGER:
+Swagger:
 
 Access the API's documentation in:
 
