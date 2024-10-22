@@ -86,11 +86,11 @@ A continuación se listan los endpoint correspondientes, junto con una breve des
 
 ### `/api/auth`
 
-| Endpoint             | Http Req | Description                 | Auth | Body                                                                                               |
-| -------------------- | -------- | --------------------------- | ---- | -------------------------------------------------------------------------------------------------- |
-| `/api/auth/register` | POST     | Registrar nuevo usuario     | No   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
-| `/api/auth/login`    | POST     | Loguear usuario registrado  | No   | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
-| `/api/auth/current`  | GET      | Obtener al usuario loggeado | No   | -                                                                                                  |
+| Endpoint             | Http Req | Description           | Auth | Body                                                                                               |
+| -------------------- | -------- | --------------------- | ---- | -------------------------------------------------------------------------------------------------- |
+| `/api/auth/register` | POST     | USER REGISTER         | No   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/api/auth/login`    | POST     | USER LOGIN            | No   | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
+| `/api/auth/current`  | GET      | LOGGER USER'S PROFILE | No   | -                                                                                                  |
 
 ### `/api/users`
 
