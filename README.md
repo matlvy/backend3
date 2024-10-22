@@ -20,6 +20,7 @@
 - [Documentation](#documentation)
 - [Scripts](#scripts)
 - [Usage](#usage)
+- [Contact me](#contact-me)
 
 ## Getting Started📌
 
@@ -122,7 +123,7 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
 
-**Contact me**📌
+## Contact me📌
 
 Matias Levy
 
