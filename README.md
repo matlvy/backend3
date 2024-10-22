@@ -11,7 +11,7 @@
 </table>
 </div>
 
-**Contents**📌
+**Contents**
 
 - [Getting Started](#getting-started)
 - [About the project](#about-the-project)
