@@ -58,13 +58,13 @@ GIT HUB
 
 ```
 https://github.com/matlvy/backend3
-
+```
 
 DOCKER HUB
 
 ```
-
 https://hub.docker.com/r/mattlevyprg/backend3
+```
 
 ## Documentation
 
@@ -74,12 +74,9 @@ Access the API's documentation in:
 
 ```
 http://localhost:8081/docs/
-
-
+```
 
 ### Scripts:📌
-
-```
 
 - Run the Start script: npm start
   This command will start the aplication in the Production environment.
@@ -93,9 +90,8 @@ http://localhost:8081/docs/
 - Run the Test script in Linux OS: npm run test:linux
   This command will run several tests, such as the authentication and mocking users aplication.
 
-- To access the aplication locally: http://localhost:8081.
-
-```
+- To access the aplication locally:
+  ` http://localhost:8081`
 
 ## Usage📌
 
@@ -122,4 +118,7 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | DELETE   | Delete all the users |     | `                                                                                              |
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
+
+```
+
 ```
