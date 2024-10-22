@@ -20,7 +20,7 @@
 - [Documentation](#documentation)
 - [Scripts](#scripts)
 - [Usage](#usage)
-- [Contact me](#contact-me)
+- [About the author](#about-the=author)
 
 ## Getting Started📌
 
@@ -127,8 +127,11 @@ A new user will be able to register, login and access the profile:
 
 Matias Levy
 
+Linkedin:
+
 ```
 www.linkedin.com/in/matias-levy-990884a7
 ```
 
+Email:
 mattlevyprg@gmail.com
