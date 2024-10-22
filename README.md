@@ -86,19 +86,19 @@ A continuación se listan los endpoint correspondientes, junto con una breve des
 
 ### `/api/auth`
 
-| Endpoint    | Http Req | Description                | Auth | Body                                                                                                    |
-| ----------- | -------- | -------------------------- | ---- | ------------------------------------------------------------------------------------------------------- |
-| `/register` | POST     | Registrar nuevo usuario    | No   | `{ "email": "testing@mail.com", "password" : "12345678", "phone": 11236856546, "username": "testing" }` |
-| `/login`    | POST     | Loguear usuario registrado | No   | `{ "email": "testing@mail.com", "password" : "12345678" }`                                              |
-| `/current`  | GET      | Obtener todos los usuarios | No   | -                                                                                                       |
+| Endpoint             | Http Req | Description                 | Auth | Body                                                                                               |
+| -------------------- | -------- | --------------------------- | ---- | -------------------------------------------------------------------------------------------------- |
+| `/api/auth/register` | POST     | Registrar nuevo usuario     | No   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/api/auth/login`    | POST     | Loguear usuario registrado  | No   | `{ "email": "testing@mail.com", "password" : "12345678" }`                                         |
+| `/api/auth/current`  | GET      | Obtener al usuario loggeado | No   | -                                                                                                  |
 
 ### `/api/users`
 
-| Endpoint              | Http Req | Description                                | Auth | Body                                                   |
-| --------------------- | -------- | ------------------------------------------ | ---- | ------------------------------------------------------ |
-| `/create/:userId`     | GET      | Crear un carrito                           | Sí   | -                                                      |
-| `/:userId`            | GET      | Obtener carrito de un usuario              | Sí   | -                                                      |
-| `/remove/:userId`     | PUT      | Eliminar todos los productos de un carrito | Sí   | -                                                      |
-| `/:userId`            | PUT      | Agregar un producto al carrito             | Sí   | `{ "_id": "644ca048b68b415727b1fc2e", "quantity": 1 }` |
-| `/:userId/:productId` | PUT      | Actualizar o remover un producto           | Sí   | `{ "quantity": 3 }`                                    |
-| `/:userId`            | DELETE   | Eliminar el carrito                        | Sí   | -                                                      |
+| Endpoint              | Http Req | Description                                | Auth | Body                                                                                               |
+| --------------------- | -------- | ------------------------------------------ | ---- | -------------------------------------------------------------------------------------------------- |
+| `/api/users/`         | POST     | Crear un usuario                           | Sí   | `{ "email": "testing@mail.com", "password" : "12345678", "first_name": John, "last_name": "Doe" }` |
+| `/:userId`            | GET      | Obtener carrito de un usuario              | Sí   | -                                                                                                  |
+| `/remove/:userId`     | PUT      | Eliminar todos los productos de un carrito | Sí   | -                                                                                                  |
+| `/:userId`            | PUT      | Agregar un producto al carrito             | Sí   | `{ "_id": "644ca048b68b415727b1fc2e", "quantity": 1 }`                                             |
+| `/:userId/:productId` | PUT      | Actualizar o remover un producto           | Sí   | `{ "quantity": 3 }`                                                                                |
+| `/:userId`            | DELETE   | Eliminar el carrito                        | Sí   | -                                                                                                  |
