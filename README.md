@@ -29,14 +29,13 @@
 
 ## Características del proyecto Backend📌
 
-- Desarrollo de la arquitectura del servidor en base a capas MVC definidas, con capa de ruteo, controladores, lógica de negocio, validaciones y capa de persistencia.
-- Persistencia mediante File System para el desarrollo local, y uso de bases de datos con Mongo Atlas para el ambiente de producción.
+- Desarrollo de la arquitectura del servidor en base a capas definidas, con capa de ruteo, controladores, servicios, validaciones y capa de persistencia.
+- Persistencia mediante uso de bases de datos con Mongo Atlas para el ambiente de producción.
 - Sistema de autenticación basado en JWT
 - Encriptación de contraseñas mediante Bcrypt
 - Sistema de registro y login de usuarios
 - Verificación de cuenta de usuario registrado
-- Ruteo para el listado de productos, así como su agregado a la base de datos, edición y eliminación
-- Lo mismo para la interacción con el carrito de compras permitiendo crear un carrito, añadirle productos, remover productos o modificarlos, y eliminar el carrito.
+- Ruteo para el listado de users, así como su agregado a la base de datos, edición y eliminación
 
 ## Tecnologías utilizadas Backend📌
 
@@ -45,12 +44,8 @@
 - MongoDB
 - Mongoose
 - Bcrypt
-- Cors
 - Dotenv
-- Joi
 - Json Web Token
-- Minimist
-- Sendgrid
 
 ## Flujo del usuario📌
 
