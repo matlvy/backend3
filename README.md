@@ -11,9 +11,9 @@
 </table>
 </div>
 
-**Tabla de contenidos**
+**Contents**
 
-- [Introducción](#introducción)
+- [Getting Started](#getting-started)
 - [Características del proyecto Backend](#características-del-proyecto-backend)
 - [Tecnologías utilizadas Backend](#tecnologías-utilizadas-backend)
 - [Instalación](#instalación)
@@ -22,7 +22,7 @@
   - [api/auth](#apiauth)
   - [api/users](#apiusers)
 
-## Introducción📌
+## Getting Started📌
 
 **Backend III API Project** es una API realizada como proyecto final para el curso de Programación Backend III de Coderhouse.
 
