@@ -76,7 +76,7 @@ Access the API's documentation in:
 http://localhost:8081/docs/
 ```
 
-### Scripts📌
+## Scripts📌
 
 - Run the Start script: npm start
   This command will start the aplication in the Production environment.
@@ -122,6 +122,12 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
 
-```
+**Contact me**📌
+
+Matias Levy
 
 ```
+www.linkedin.com/in/matias-levy-990884a7
+```
+
+mattlevyprg@gmail.com
