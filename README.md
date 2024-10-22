@@ -28,7 +28,7 @@
 ## About The Project📌
 
 - Backend Server arquitecture development based on layers, routers, controllers, services, validations and persistance structure.
-- Persistance throught usage of Mongo Atlas databases for the Production environment.
+- Persistance through usage of Mongo Atlas databases for the Production environment.
 - Authentication system based on JWT
 - Password encryption based on Bcrypt
 - User register and login system
