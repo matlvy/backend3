@@ -14,13 +14,13 @@
 **Contents**📌
 
 - [Getting Started](#getting-started)
-- [About The Project](#about-the-project)
-- [Built With](#built-with)
+- [About the project](#about-the-project)
+- [Built with](#built-with)
 - [Installation](#installation)
 - [Documentation](#documentation)
 - [Scripts](#scripts)
 - [Usage](#usage)
-- [About the author](#about-the=author)
+- [Contact the author](#contact-the=author)
 
 ## Getting Started📌
 
@@ -123,9 +123,9 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
 
-## About the author
+## Contact the author
 
-Matias Levy
+Feel free to contact the author: Matias Levy
 
 Linkedin:
 
@@ -134,4 +134,5 @@ www.linkedin.com/in/matias-levy-990884a7
 ```
 
 Email:
+
 mattlevyprg@gmail.com
