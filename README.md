@@ -123,7 +123,7 @@ A new user will be able to register, login and access the profile:
 | `/api/users/`             | GET      | Get all the users    |     |                                                                                                |
 | `/api/users/:userId/pets` | GET      | Get the pets by user |     |                                                                                                |
 
-## Contact me
+## About the author
 
 Matias Levy
 
