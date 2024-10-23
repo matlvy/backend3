@@ -83,7 +83,8 @@ http://localhost:8081/docs/
 
 - Run the Development script:
 
-```npm run dev
+```
+npm run dev
 
 ```
 
