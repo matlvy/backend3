@@ -78,15 +78,19 @@ http://localhost:8081/docs/
 ## Scripts📌
 
 - Run the Start script: npm start
+
   This command will start the aplication in the Production environment.
 
 - Run the Development script: npm run dev
+
   This command will start the aplication in the Development environment.
 
 - Run the Test script in Windows OS: npm run test
+
   This command will run several tests, such as the authentication and mocking users aplication.
 
 - Run the Test script in Linux OS: npm run test:linux
+
   This command will run several tests, such as the authentication and mocking users aplication.
 
 - To access the aplication locally:
