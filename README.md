@@ -81,7 +81,9 @@ http://localhost:8081/docs/
 
   This command will start the aplication in the Production environment.
 
-- Run the Development script: npm run dev
+- Run the Development script: ```npm run dev
+
+```
 
   This command will start the aplication in the Development environment.
 
@@ -96,7 +98,9 @@ http://localhost:8081/docs/
 - To access the aplication locally:
 
 ```
+
 http://localhost:8081
+
 ```
 
 ## Usage📌
@@ -130,9 +134,12 @@ A new user will be able to register, login and access the profile:
 Linkedin:
 
 ```
+
 www.linkedin.com/in/matias-levy-990884a7
+
 ```
 
 Email:
 
 mattlevyprg@gmail.com
+```
