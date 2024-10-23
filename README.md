@@ -109,7 +109,7 @@ npm run test:linux
 
 This command will run several tests, such as the authentication and mocking users aplication.
 
-- To access the aplication locally:
+- Access the aplication locally:
 
 ```
 http://localhost:8081
