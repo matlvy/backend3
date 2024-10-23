@@ -77,19 +77,39 @@ http://localhost:8081/docs/
 
 ## Scripts📌
 
-- Run the Start script: npm start
-  This command will start the aplication in the Production environment.
+- Run the Start script:
 
-- Run the Development script: npm run dev
-  This command will start the aplication in the Development environment.
+```
+npm start
+```
 
-- Run the Test script in Windows OS: npm run test
-  This command will run several tests, such as the authentication and mocking users aplication.
+This command will start the aplication in the Production environment.
 
-- Run the Test script in Linux OS: npm run test:linux
-  This command will run several tests, such as the authentication and mocking users aplication.
+- Run the Development script:
 
-- To access the aplication locally:
+```
+npm run dev
+```
+
+This command will start the aplication in the Development environment.
+
+- Run the Test script in Windows OS:
+
+```
+npm run test
+```
+
+This command will run several tests, such as the authentication and mocking users application.
+
+- Run the Test script in Linux OS:
+
+```
+npm run test:linux
+```
+
+This command will run several tests, such as the authentication and mocking users aplication.
+
+- Access the aplication locally:
 
 ```
 http://localhost:8081
@@ -123,7 +143,7 @@ A new user will be able to register, login and access the profile:
 
 ## Contact the author📌
 
-Linkedin:
+LinkedIn:
 
 ```
 www.linkedin.com/in/matias-levy-990884a7
@@ -131,4 +151,6 @@ www.linkedin.com/in/matias-levy-990884a7
 
 Email:
 
+```
 mattlevyprg@gmail.com
+```
