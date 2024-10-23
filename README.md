@@ -143,7 +143,7 @@ A new user will be able to register, login and access the profile:
 
 ## Contact the author📌
 
-Linkedin:
+LinkedIn:
 
 ```
 www.linkedin.com/in/matias-levy-990884a7
