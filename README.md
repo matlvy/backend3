@@ -81,11 +81,13 @@ http://localhost:8081/docs/
 
   This command will start the aplication in the Production environment.
 
-- Run the Development script: ```npm run dev
+- Run the Development script:
+
+```npm run dev
 
 ```
 
-  This command will start the aplication in the Development environment.
+This command will start the aplication in the Development environment.
 
 - Run the Test script in Windows OS: npm run test
 
@@ -142,4 +144,7 @@ www.linkedin.com/in/matias-levy-990884a7
 Email:
 
 mattlevyprg@gmail.com
+
+```
+
 ```
