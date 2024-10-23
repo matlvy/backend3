@@ -99,7 +99,7 @@ This command will start the aplication in the Development environment.
 npm run test
 ```
 
-This command will run several tests, such as the authentication and mocking users aplication.
+This command will run several tests, such as the authentication and mocking users application.
 
 - Run the Test script in Linux OS:
 
@@ -146,15 +146,11 @@ A new user will be able to register, login and access the profile:
 Linkedin:
 
 ```
-
 www.linkedin.com/in/matias-levy-990884a7
-
 ```
 
 Email:
 
-mattlevyprg@gmail.com
-
 ```
-
+mattlevyprg@gmail.com
 ```
